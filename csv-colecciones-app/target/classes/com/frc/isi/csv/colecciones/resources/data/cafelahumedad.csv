@@ -1,0 +1,351 @@
+Codigo,NombreProducto,TipoProducto,CantidadVendida,PrecioVenta,Descuento
+6c3faff3-5b2e-4e51-899d-34dffc0c49b2,Latte,Infusiones,335,255.81,1.79
+fbe6d146-1fbd-45b0-b9c2-919c9056ac4c,Ensalada de Quinoa,Ensaladas,85,140.54,0.02
+29d7449c-0992-43ec-8865-e0c46e69a339,Empanada de Pollo,Bocadillos Salados,497,955.23,1.39
+6dcf9390-e495-4d58-b683-57b61a4741cd,Agua Mineral,Refrescos,403,783.32,2.14
+72089f9e-2a08-4f88-a747-6b9965c333c4,Batido Proteico,Batidos,270,527.8,1.38
+a549ae34-6bb1-494b-bf53-a00d7607bdcd,Ensalada Mixta,Ensaladas,165,629.39,0.97
+0441f166-46b7-4e58-9afc-c93d1286caaa,Wrap Vegetariano,Wraps,83,1735.89,1.6
+cba92698-923f-4a54-b86b-a3bb1f2af2d3,Empanada de Pollo,Bocadillos Salados,351,885.21,1.09
+24214cf5-32a6-4628-9312-ed273ad8d6a2,Wrap de Pollo,Wraps,408,1109.69,1.35
+bc16ffb5-2371-4b43-9ebf-d4211a508b85,Agua con Gas,Refrescos,281,1165.7,2.13
+691c35d3-9d65-4d9d-8ce4-6e7ae93231db,Sándwich de Pollo,Sándwiches,293,743.88,1.43
+050158ef-8929-45f2-8807-ac75a283962a,Brownie,Repostería,307,211.82,1.29
+0f565777-382f-4738-ba73-ff79c2f7e13b,Chips de Papa,Bocadillos Salados,484,1519.33,0.53
+9e3b3537-6c3d-48dd-beb9-41b6e56754b2,Latte,Infusiones,216,958.06,1.93
+d585e2a4-c042-476c-8f7a-a09cb71fd4f8,Sándwich Vegetariano,Sándwiches,360,134.17,0.14
+b5d5123d-54d5-40e3-b022-27a803f82927,Jugo de Zanahoria,Jugos,140,114.93,2.45
+e49881c6-decf-44a6-af4f-3036a8c7137c,Sándwich Vegetariano,Sándwiches,348,1407.67,1.38
+7dfc311b-c283-46de-b5c4-986cbc80b554,Ensalada César,Ensaladas,478,979.28,1.98
+1e4ce3d5-95e3-47be-b359-45eee002cec7,Medialuna,Repostería,427,1175.04,0.85
+6bf1fc91-3d8a-4a21-af52-37ba1f50f20a,Ensalada de Quinoa,Ensaladas,495,1660.72,0.76
+9f53f32e-4a73-4e9d-83cf-3fa5d3f28f56,Té Chai,Infusiones,115,1302.31,2.0
+d479271a-1ea1-452d-9c62-51e4bb9e7c47,Medialuna,Repostería,452,1594.14,0.01
+77669ca7-4d44-4b5c-a7c3-060cd15ff9ec,Batido de Mango,Batidos,384,1678.54,1.22
+f9b23ad8-6761-453d-9811-cd166a6e5d2b,Wrap Vegetariano,Wraps,319,1079.3,0.48
+081e36f0-aff3-4c5d-b193-275330050031,Wrap Vegetariano,Wraps,153,465.74,1.66
+e957f1e1-68df-4bce-93ea-c208e82bd13e,Wrap de Carne,Wraps,229,1501.29,0.86
+36b710cf-c747-4250-b82e-18f1dbb5e315,Ensalada de Quinoa,Ensaladas,313,624.65,2.08
+90e6e0b9-454b-4828-9578-31a9ef2d13d2,Sándwich de Jamón y Queso,Sándwiches,355,154.64,0.24
+4b8a0bd5-65dd-4727-b505-a21d9d6b8efc,Gaseosa Lima Limón,Refrescos,72,264.17,1.68
+e3c9a7f7-0a5e-46d0-9b76-6116cffd82ab,Ensalada Mixta,Ensaladas,400,797.74,0.12
+a3c2efc4-98e9-4e48-b43d-8e9b007e5c49,Wrap Vegetariano,Wraps,116,1661.77,2.31
+3fc6dd95-d3ad-49f8-bcde-095641b2396c,Batido Proteico,Batidos,128,721.23,0.81
+2acc4753-c080-41f4-9159-228f8bf7d203,Gaseosa Lima Limón,Refrescos,117,1135.08,1.67
+2e4050f8-d69f-47da-8f08-5ae654128106,Ensalada de Quinoa,Ensaladas,439,1762.48,1.27
+84959258-0bbd-48b9-9993-cea573b503ed,Cookie,Repostería,335,386.97,1.22
+cb721371-5598-4fdb-aeb4-c66ff9cb7156,Empanada de Carne,Bocadillos Salados,482,494.68,2.18
+d14b02c4-5185-473b-8d2e-1ccc9ea500f8,Latte,Infusiones,409,548.48,2.23
+0e7f9eb4-7270-406d-8a5b-5c8ded759449,Té Verde,Infusiones,190,420.09,0.05
+03d9adb6-21e8-4fec-9f68-85f3d051efc8,Agua con Gas,Refrescos,156,1580.67,1.54
+3660c884-b60f-4522-bbd3-c58732e15999,Nachos con Queso,Bocadillos Salados,237,1778.77,0.39
+3ae191bf-862d-4d5d-a7ba-c488623edf56,Cookie,Repostería,387,872.34,1.17
+be6272b1-c53e-4f30-b8f4-1c7f11ec97c2,Wrap de Pollo,Wraps,451,1356.71,0.83
+08fd5cd3-cc56-48fd-a7bf-0ec855c73b6f,Ensalada Mixta,Ensaladas,472,1619.19,0.97
+67679b29-0118-4133-97bf-f28c233342c0,Jugo Detox,Jugos,236,1586.78,1.87
+9d555f09-ebec-4793-8145-8cfb5ca00c37,Ensalada César,Ensaladas,118,395.23,0.09
+1fea5d25-bfc4-4007-b527-151362423979,Té Negro,Infusiones,303,1099.81,0.56
+ec80f368-acc4-4fd1-a8b0-03debc8c4186,Wrap de Pollo,Wraps,444,1060.29,1.01
+90b50b36-7df5-4098-a69a-e06cc79d1553,Tarta de Manzana,Repostería,113,168.34,0.35
+ef41a318-e837-4a10-a893-7653d5ebe4ee,Batido de Frutilla,Batidos,444,1718.45,0.63
+d8ca04b8-b26f-4572-95d1-5f3c07889816,Jugo de Naranja,Jugos,67,1346.43,1.23
+12abb2db-bd95-482b-aa71-2a3cc7fc8806,Ensalada de Quinoa,Ensaladas,278,1247.17,1.75
+d0940469-0ac1-480e-bddf-114fb2c2f68e,Brownie,Repostería,213,158.56,0.79
+99d9f677-d312-4d26-9f75-ad90c895e134,Latte,Infusiones,147,151.32,1.55
+bcc35556-6e7c-4d82-80c2-a919f796ed46,Wrap de Pollo,Wraps,326,802.32,0.16
+9a4cbb16-5958-44a9-8785-04b65643dc9f,Cookie,Repostería,226,614.47,0.83
+d253241e-2834-4f99-a219-5b43f93b3139,Wrap de Pollo,Wraps,127,441.66,0.19
+046e3c0c-8ef4-4791-be21-91e467346218,Café Cortado,Infusiones,429,1767.0,2.02
+d6969993-079f-4398-947d-913721e194a4,Chips de Papa,Bocadillos Salados,138,1172.53,0.18
+7dd5c876-a4b4-499c-81b0-c35f2034580d,Jugo de Manzana,Jugos,407,823.57,2.49
+4ad67bbf-f21c-410e-b1ec-fd1d8c56f6ef,Batido de Banana,Batidos,409,1751.38,0.77
+faa1d3ed-2d2d-4d25-b580-67484df3ed33,Medialuna,Repostería,279,1259.87,2.4
+484917d6-79b1-433a-9c57-4563d86a7cd1,Wrap Vegetariano,Wraps,286,847.87,0.77
+50cb0f7e-1f7d-401b-a793-629200a10258,Brownie,Repostería,161,1363.68,0.51
+7109a4bb-c947-4c77-848d-a0f989e986af,Wrap de Pollo,Wraps,73,1579.61,0.94
+45285dd1-990c-4d9b-961a-11d94bca8dc9,Wrap de Carne,Wraps,113,137.3,0.84
+7b35212b-5621-4cf6-9be2-49932b97c5f4,Espresso,Infusiones,495,306.22,2.2
+67a4f1f4-c5ae-4d85-8df6-539f1d6e8bc1,Jugo de Manzana,Jugos,437,798.84,2.49
+ab519d97-bcbf-4b42-b785-e2d8264a8f32,Jugo de Zanahoria,Jugos,117,1685.64,1.89
+8e8b1ede-72b7-4d05-b4f0-a9723793be01,Jugo Detox,Jugos,354,1728.15,2.43
+37285127-95f4-4e94-9876-547b68fa8d54,Sándwich de Jamón y Queso,Sándwiches,320,1581.06,2.27
+9b10f584-107f-470c-bf84-315fe5138c15,Wrap de Carne,Wraps,169,1388.1,0.01
+3f417eef-74d7-4ffb-be21-9a55984146d3,Jugo de Naranja,Jugos,319,94.52,0.27
+2d2d0bed-63d5-480f-898c-8b7c522f8a9b,Jugo Detox,Jugos,491,1304.75,1.01
+2536ab47-73cf-421b-99a8-ca7871572336,Jugo de Naranja,Jugos,184,1749.14,1.76
+0fad62f5-c989-48a4-b819-d9b64891be0f,Jugo Detox,Jugos,221,1414.25,1.0
+24ab11ba-4cc7-4073-a430-3a272c73dc84,Latte,Infusiones,385,1775.85,0.31
+938045f9-f58d-4ed9-9427-682afcbcf185,Espresso,Infusiones,411,410.92,1.52
+fe7e4c44-e06a-47d0-bfdb-a0429d89d4b0,Gaseosa Lima Limón,Refrescos,430,451.8,0.52
+52f25608-a5c5-4d05-b5c7-75a2c4f4825f,Jugo de Zanahoria,Jugos,283,225.99,2.42
+9ef9c774-4985-4cb9-bc6a-afc3e13f2ca2,Empanada de Carne,Bocadillos Salados,169,919.22,1.03
+aa26b26e-61ff-4605-ac92-9bc60fcce709,Muffin,Repostería,495,1419.17,0.66
+03b1a41e-92f4-4b79-a34a-d09388c7b060,Tarta de Manzana,Repostería,95,348.29,0.3
+5158bcd1-464b-4533-8c87-0b6220bf02c3,Empanada de Pollo,Bocadillos Salados,104,582.42,1.8
+62f8e667-1c00-4dec-830c-580278e6045f,Empanada de Carne,Bocadillos Salados,480,643.23,0.71
+c5febc6b-76f8-40b7-b5db-67c9cf607aab,Batido Proteico,Batidos,54,954.8,1.04
+c6758ea0-d667-42bc-9568-33874f1cf734,Latte,Infusiones,155,418.75,0.76
+e128acd5-aaa0-4c11-bc3d-c255188a7424,Medialuna,Repostería,314,853.3,0.27
+b9c7033d-161f-43a0-8dbb-56694472d8ef,Empanada de Carne,Bocadillos Salados,440,921.07,0.83
+db230262-c399-40e8-ab9c-890242246ce6,Agua Mineral,Refrescos,461,686.71,0.94
+477958c7-df7a-4b16-84c1-ff4241abde28,Ensalada César,Ensaladas,420,730.4,2.2
+e945be23-5af1-4e7c-9afe-737687385c3c,Brownie,Repostería,111,1577.98,1.56
+884cd247-cb7a-4495-b3b1-1bb09abdce55,Muffin,Repostería,179,1019.13,1.13
+17cc0a18-df83-4b88-a452-dd9f99a50688,Jugo de Naranja,Jugos,316,1319.56,0.95
+9b067d8e-31d8-41f5-b8f9-2a8be9e2a739,Wrap de Pollo,Wraps,195,1676.72,2.18
+d08d9dbc-67a4-4185-95c2-62f67e896c5b,Café Cortado,Infusiones,261,80.27,0.07
+136d08ea-faac-4b06-9f70-655a2af61737,Batido Proteico,Batidos,198,830.58,0.84
+cbac099b-38ce-49ed-8941-ccc2d746374c,Batido de Mango,Batidos,341,504.98,1.79
+c8a2114b-d3ee-461b-a063-7682e04d1da0,Gaseosa Lima Limón,Refrescos,244,1036.35,1.28
+8b36d5bb-f6e5-4f72-b947-d40d262bc7a1,Chips de Papa,Bocadillos Salados,166,1560.59,2.48
+f7675d87-4def-465f-bc82-470dfdd0ffb7,Empanada de Carne,Bocadillos Salados,124,757.14,2.0
+999e6e65-1b3b-4db1-963e-dba4393fc187,Batido de Banana,Batidos,206,1242.51,0.08
+fdc1025e-0d75-4270-a9d2-e861fc4283f8,Wrap Vegetariano,Wraps,174,576.72,0.57
+fd81bc39-096b-480f-ad5f-14a316cafd05,Té Verde,Infusiones,176,1435.42,1.89
+7f9a29d7-f0af-466f-a8c1-e45ef099394c,Agua con Gas,Refrescos,85,1345.68,0.26
+7ed79557-740d-4598-a1e6-4633dd24f9a3,Batido de Banana,Batidos,383,249.78,1.78
+c248098b-33f3-4b4a-9906-496a26b378e3,Brownie,Repostería,169,1782.77,1.11
+37af9217-1e5f-4ebb-ae65-e1282244c31f,Té Verde,Infusiones,420,1645.43,2.28
+eeef731a-c420-4291-8aa2-b75e5737b731,Wrap de Carne,Wraps,128,1447.32,2.47
+d8f5c2df-751f-49b3-b307-64ec63ebbf3a,Jugo Detox,Jugos,217,1303.36,1.53
+96a9f9d6-d869-4f41-ae6f-2a6c717b62da,Jugo Detox,Jugos,300,838.34,0.36
+2643fa20-d4a7-405c-b70c-3fabb3d7b407,Sándwich de Jamón y Queso,Sándwiches,486,1555.54,0.84
+646ea70a-14df-4519-b27f-4248aa981c7b,Agua con Gas,Refrescos,453,1657.32,0.43
+a99a5cc9-ea16-4c5d-9875-65778d392b63,Wrap Vegetariano,Wraps,224,1512.61,1.72
+70e78f01-a353-4e4d-a56f-c7dfc093b3a6,Batido de Mango,Batidos,290,1441.27,0.48
+f6b5393d-1342-4507-a059-94dac9c93650,Batido de Mango,Batidos,451,1580.83,0.7
+1ca060cf-68a7-4e7b-861d-28d83613fdc0,Wrap Vegetariano,Wraps,131,1195.34,1.31
+a34c9f48-e452-4783-a2ad-b4b664441dbd,Batido de Frutilla,Batidos,292,106.18,1.3
+3feb6f7f-f2bf-433a-86df-1ab8ebfd6911,Medialuna,Repostería,271,1423.52,0.52
+630e4cbc-aec8-46d6-a63a-430a43fb8a12,Agua Mineral,Refrescos,292,1427.64,2.28
+3c154136-d6fe-4b62-8ec8-bd46cf1cea33,Ensalada Mixta,Ensaladas,167,478.9,1.87
+60e05ba8-ae36-43c6-b787-5f16a20bb7a3,Agua Mineral,Refrescos,435,425.42,0.77
+3e012429-99bd-4ff0-8e71-07895debe396,Jugo Detox,Jugos,115,642.31,2.37
+b01bf8ca-8f0a-4669-93d9-fe6432a9c5fe,Jugo Detox,Jugos,411,198.08,1.65
+aa092824-335b-4c5e-8589-99fa33cd0335,Café Cortado,Infusiones,326,1447.21,1.78
+dae30971-2b2d-4a5a-ad5e-d029eedc688b,Batido de Frutilla,Batidos,457,1794.55,1.51
+1829d731-8dac-4aff-a559-4ec69b63cb3d,Té Negro,Infusiones,127,1646.87,1.26
+7405fa10-6ecc-49a0-af03-145825fa0dc1,Sándwich de Jamón y Queso,Sándwiches,248,1790.48,1.38
+9a472a87-c3a0-43b1-8fe6-b297f392247d,Chips de Papa,Bocadillos Salados,419,1603.22,1.46
+320f4335-4d06-45c9-b5e6-712dce6765ac,Brownie,Repostería,253,930.14,0.84
+005cb73c-af30-443f-ba52-455ecbd2821c,Ensalada Mixta,Ensaladas,412,925.64,1.32
+c661e27a-1ec9-4d89-9ce3-561ddedd01a6,Empanada de Carne,Bocadillos Salados,78,612.35,2.38
+22600f61-8f2d-4a02-941c-e5a224d57d16,Sándwich de Jamón y Queso,Sándwiches,415,1386.4,1.53
+a72ed9c8-bfe7-4a85-9775-575836dd402e,Ensalada Mixta,Ensaladas,439,1349.95,1.61
+8ec7ae7c-c2cb-4cd8-a397-15fcf55f0ff6,Chips de Papa,Bocadillos Salados,181,845.9,1.97
+accdd5cb-aa0c-4e8c-9822-78cea89341c4,Agua Mineral,Refrescos,154,973.53,1.32
+cbcdf08f-e2ea-4f70-a1d6-35beb7e53d7b,Jugo de Zanahoria,Jugos,276,403.24,0.68
+b9295b90-37a8-48c1-8782-4fe26038522c,Té Chai,Infusiones,419,1027.96,2.14
+3aeb8a51-14a7-49cd-8803-7c556b251c47,Nachos con Queso,Bocadillos Salados,93,431.52,1.92
+bda28114-59dd-40db-88b3-4b7e75754d6d,Wrap Vegetariano,Wraps,170,336.73,2.46
+3327b24f-b54a-46d2-b4c0-e40ae65275f0,Empanada de Pollo,Bocadillos Salados,328,1718.42,1.76
+7c46b842-a95d-444b-89de-aa1cc3d89f68,Jugo de Manzana,Jugos,174,1726.11,1.94
+eea55d2a-8086-44f4-9406-feda46cee1d6,Batido de Banana,Batidos,303,1010.32,1.49
+1c5a87e5-8bfd-48d1-9788-a06f90f0fec1,Wrap de Pollo,Wraps,310,347.32,0.46
+c909652b-3f3f-4d31-990c-30247e92a3fc,Batido Proteico,Batidos,423,627.43,1.4
+ae8a3207-8e0e-43b4-a374-0ad9acc20bf5,Empanada de Carne,Bocadillos Salados,252,1371.24,0.09
+991df551-22b3-4ac2-8554-8a73f37c5a03,Jugo de Zanahoria,Jugos,298,1118.86,1.57
+f3e2afca-46e8-4099-98e9-9ef6e1fb6d9a,Jugo de Zanahoria,Jugos,331,323.0,1.92
+382dac37-75c7-4c28-9927-8664a7f344b5,Batido de Frutilla,Batidos,95,885.65,0.73
+6d64d6ad-cedc-4c70-a0c8-712d62bdd172,Empanada de Carne,Bocadillos Salados,494,228.39,1.21
+9962ef3b-ac75-477b-9a9d-9e19641459ff,Batido Proteico,Batidos,210,1080.42,1.65
+11a4bab3-bdff-458b-8ac5-9732048aa394,Chips de Papa,Bocadillos Salados,330,118.27,0.21
+743beacb-0807-4180-9598-c3b22dd933cc,Tarta de Manzana,Repostería,144,412.59,0.87
+a09119b1-de09-480c-92df-c8e4be300348,Ensalada César,Ensaladas,246,1063.62,1.56
+d9f0cdbb-20c2-484c-9d91-d89d0a7fc397,Sándwich de Atún,Sándwiches,67,707.55,0.06
+df214684-1d8d-40a2-a8fa-b820503ca027,Batido de Frutilla,Batidos,197,782.98,0.32
+b1fb4b29-7e6a-42b2-8dbf-f78100dcb673,Chips de Papa,Bocadillos Salados,318,1139.12,0.92
+ac2d65d4-76e3-4a26-b2d0-b2226929f291,Agua Mineral,Refrescos,481,885.18,2.35
+81cbfb26-d24d-4902-8b03-2ae76171717d,Ensalada César,Ensaladas,376,1353.06,0.52
+8d02054f-c6de-4f81-9507-cc113862a713,Capuccino,Infusiones,144,1094.6,0.0
+7337a356-054b-4228-bf11-fcd9d373291d,Batido Proteico,Batidos,459,1338.88,1.42
+8a8b6557-90f6-4e40-a0bb-8fcf91e665fe,Tarta de Manzana,Repostería,72,1378.34,1.29
+9363c012-dcdf-4acb-8982-c6f84ac00540,Jugo de Naranja,Jugos,324,458.88,1.56
+2fa9d46b-9bfa-4777-9beb-a64fba93d7ae,Tarta de Manzana,Repostería,444,904.76,2.45
+b780cfe4-1170-4a73-8d84-fd960778342c,Agua Mineral,Refrescos,95,397.73,2.35
+e8753504-678c-4c69-9a61-2a1c538a4ccc,Agua Mineral,Refrescos,468,1750.58,0.63
+aff820b8-8bf2-49b3-a392-984b23dcbc42,Ensalada de Quinoa,Ensaladas,160,475.55,0.61
+2d25bc52-c82f-414e-9695-efc8cf794647,Tarta de Manzana,Repostería,304,455.12,1.46
+f2beed05-7cbe-4e5d-b51f-94ace1b1dae4,Té Negro,Infusiones,204,581.15,2.01
+44936fa3-76c0-4c90-9af1-e291d4d850cc,Gaseosa Cola,Refrescos,236,373.16,0.24
+af536cc8-8d35-4435-8247-5b81dd97fa79,Sándwich de Jamón y Queso,Sándwiches,218,368.21,1.88
+c9665213-a080-4190-b779-83d154a0e0ee,Brownie,Repostería,97,1138.52,2.33
+eddbbfc9-3c44-4d4a-ac68-7a7219f8066e,Sándwich de Atún,Sándwiches,401,1318.34,1.08
+2a221884-c7de-4569-b4d8-876f22944581,Batido de Mango,Batidos,402,731.85,0.68
+f27bc5d8-e331-4294-bc50-366ea2c18d54,Ensalada Mixta,Ensaladas,470,93.26,1.33
+7a83cee1-c4fe-4892-9f15-fbe3160d835b,Capuccino,Infusiones,150,1094.52,2.34
+d8588bdc-312a-4c77-9bf8-5c1e2f75c82a,Wrap de Carne,Wraps,286,875.11,2.34
+79d44f3f-d5b1-48d8-82c0-92294722966b,Cookie,Repostería,290,917.08,1.7
+3131ba07-2bd7-40fa-8fc0-f205b755896a,Gaseosa Cola,Refrescos,360,100.77,0.13
+52828ad3-dc24-48b5-893d-2bc4eae148af,Ensalada Mixta,Ensaladas,267,1076.19,1.55
+4d9e43ae-68c9-4678-aac8-a0e2a4537b78,Ensalada Mixta,Ensaladas,154,323.18,0.13
+3c614938-aab8-4591-80a7-9f2f5aec7c29,Cookie,Repostería,473,1436.49,0.98
+250f58e2-3c6c-40e5-afa7-3e37a028b03c,Batido Proteico,Batidos,183,1767.96,0.84
+f050d49c-75bd-45d1-9164-f805fb36876e,Ensalada Mixta,Ensaladas,246,218.48,2.41
+be547fd0-d6bf-4beb-9475-43e7ff49b954,Wrap Vegetariano,Wraps,416,1751.8,0.15
+c22f249e-7e3b-4c5f-a296-63575e09dcc4,Muffin,Repostería,86,1731.46,1.85
+c17b8285-5df3-4980-a0c9-8bd8e15b9268,Nachos con Queso,Bocadillos Salados,218,96.94,1.05
+067c090d-4785-4e88-a81f-c1a9e4703e5d,Té Chai,Infusiones,134,1771.54,0.04
+c0bea554-9d00-4d48-85b6-929d27bc8bed,Té Chai,Infusiones,224,589.22,0.7
+f79d1990-e301-43f4-b3c5-fa797c93c3db,Empanada de Carne,Bocadillos Salados,188,173.15,2.22
+3e9fdd53-b698-4eb9-87e6-53b188f8cc75,Nachos con Queso,Bocadillos Salados,466,763.95,1.14
+5704781f-58b7-472b-b145-cb8c0a7803e3,Wrap de Pollo,Wraps,168,530.91,2.16
+bb9f942b-2eb7-43f9-88dc-9a7ff925e799,Jugo Detox,Jugos,50,1081.47,0.67
+00bd1aec-b4dd-4c42-b111-ae5453e12f2d,Jugo de Zanahoria,Jugos,107,539.18,1.41
+c3a0bcb1-3755-464c-b713-11ed39a00148,Empanada de Carne,Bocadillos Salados,206,1566.1,0.61
+87b6f9c5-adf5-49f5-bbfc-b4ec404a7143,Sándwich de Pollo,Sándwiches,305,1743.8,1.55
+d57c6cc0-fb6e-4528-9d65-96ebf6204993,Sándwich de Pollo,Sándwiches,470,1443.81,0.19
+79b2f680-3a7f-4e2a-81d5-6ef613769bb5,Tarta de Manzana,Repostería,86,982.76,1.99
+16cbea3b-0902-4ee6-a786-6319229d1a39,Latte,Infusiones,296,90.35,0.31
+51d34ef2-53c0-4ae4-a53a-b5f01031484b,Muffin,Repostería,304,1308.29,0.81
+272a808e-709d-4159-b579-58b24ae1eeea,Batido de Mango,Batidos,441,337.14,2.45
+f1415eeb-05db-40d0-a4ef-9335c2bddba9,Wrap de Pollo,Wraps,268,858.72,1.56
+8ebf0965-f28d-47b8-a83c-d6a3a46f9228,Té Verde,Infusiones,158,1608.58,0.02
+bd03b0f7-698d-4fd6-a7b8-b3a92a26c666,Café Cortado,Infusiones,99,1131.76,0.76
+7c0932f7-73fa-4af2-bdf9-92ff69ecdf56,Té Verde,Infusiones,107,672.48,1.63
+40a60793-a62b-4574-8027-bab43395aca0,Capuccino,Infusiones,448,560.34,0.25
+250253d8-a016-410d-900c-2783c53a17ee,Wrap de Carne,Wraps,409,1318.85,0.25
+5e884e97-56a5-474b-ae3d-157cd72ce773,Sándwich de Pollo,Sándwiches,351,1554.87,2.47
+737ddc3a-d64b-4a57-9c11-15c4f0bb8025,Nachos con Queso,Bocadillos Salados,272,1794.52,0.84
+df7cfa88-210e-4d46-942c-8d8334195905,Jugo Detox,Jugos,259,126.29,0.32
+9036ce34-bfbd-470a-b3dc-16817452758f,Batido de Frutilla,Batidos,303,130.39,0.27
+1a5239f7-95f3-4fa1-bac9-722ff22067ca,Té Negro,Infusiones,394,1439.61,2.2
+a7551309-5e37-4f27-bb5b-b87042829dbb,Gaseosa Cola,Refrescos,409,1583.33,1.83
+c6988be2-8e37-400a-b775-b10d3c23b162,Batido de Banana,Batidos,450,626.8,1.03
+d9848840-9693-4c71-ad21-0754315acc20,Sándwich de Jamón y Queso,Sándwiches,315,520.77,2.18
+77415bf8-a31f-4eff-a488-5c40eaeb3a69,Café Cortado,Infusiones,483,1300.93,0.23
+8c8c72fb-e7de-4fd1-a236-61d44a0dfc9b,Batido Proteico,Batidos,91,1132.93,0.15
+78474eb8-e5bc-472f-9ed4-555f2e1fa79d,Cookie,Repostería,127,1673.31,2.31
+4d79658f-7e4e-45dc-9636-c8998e2f62ad,Chips de Papa,Bocadillos Salados,93,1620.78,1.0
+80ee471c-e129-486a-91eb-618819297db7,Sándwich de Pollo,Sándwiches,89,1123.06,0.69
+23f2fca6-47b4-4898-89d5-0a9c7c996b58,Sándwich de Atún,Sándwiches,239,701.18,0.71
+a90a0468-765d-4539-b28d-b0e179e47aeb,Sándwich de Pollo,Sándwiches,364,268.29,1.53
+b856ea3c-4cfd-4a53-bbdb-d3ca9faecd70,Empanada de Carne,Bocadillos Salados,414,314.24,2.37
+966b38e1-a2f4-4c20-8434-a11014920c9f,Muffin,Repostería,407,757.01,2.09
+1ce25492-737b-4a29-8eb9-5b3467630b53,Té Verde,Infusiones,159,121.13,2.19
+e7e49075-3281-449d-98e1-bbff373a54cb,Sándwich Vegetariano,Sándwiches,202,170.03,1.43
+d3c77771-5b18-473c-9330-53d1596e9d5d,Espresso,Infusiones,315,173.38,1.11
+000d33af-7a1f-48ee-88d1-6be9ab1e4986,Sándwich de Jamón y Queso,Sándwiches,377,497.21,0.22
+742a82b6-fd5f-44e7-8f5a-906d8e9e3f0f,Sándwich de Atún,Sándwiches,199,1324.88,1.29
+c079a73e-97a2-4537-8b26-b07813601f28,Agua con Gas,Refrescos,110,1189.2,1.26
+cebf1f6e-aa6f-47fb-9852-57a3c63c3d47,Gaseosa Lima Limón,Refrescos,255,1161.6,2.5
+43bd4505-eb43-4d27-822d-0a200cc07ad1,Jugo de Naranja,Jugos,394,1147.24,0.8
+23cee2f0-3dcb-4c9f-86c8-36e53fcb6230,Gaseosa Lima Limón,Refrescos,303,1122.1,0.15
+651e8821-4d21-48c6-a372-ed5b263e4d68,Batido de Mango,Batidos,401,1735.1,1.45
+dabe4598-8c05-4d6e-8bbb-a13cd9d6033f,Ensalada de Quinoa,Ensaladas,415,486.58,1.02
+aed607a8-bb2b-49d2-b72c-07e364934c9b,Jugo de Manzana,Jugos,398,1279.55,1.85
+7d5b9598-a185-406a-a54a-7409d3d236cf,Ensalada Mixta,Ensaladas,275,213.79,0.09
+ea6d1f01-0e6b-470e-9b76-b8fd071d1f43,Jugo de Zanahoria,Jugos,193,345.19,1.54
+399643f8-f8be-4b80-99a3-c5f848565b10,Jugo Detox,Jugos,396,285.41,0.63
+34523d92-7645-4372-84bc-3708f27e162b,Nachos con Queso,Bocadillos Salados,317,712.73,1.12
+3bdae24b-125c-4f19-9802-e53f3846b49f,Chips de Papa,Bocadillos Salados,271,1562.49,0.34
+3038178a-ddff-49e7-ad9e-9bae91ee9bdd,Batido de Frutilla,Batidos,159,907.09,1.58
+682acdb3-8492-4897-88a0-417e1cdad86c,Jugo de Manzana,Jugos,62,218.04,0.49
+19df30df-e2a3-4ffd-bb9f-61e89b14bc26,Batido de Banana,Batidos,462,337.97,2.1
+c5d48b0f-e5b0-4923-a01c-b1cb1e806074,Nachos con Queso,Bocadillos Salados,208,847.5,1.26
+bd274b3c-c09d-48de-9e81-b3d096f9b0f6,Sándwich de Jamón y Queso,Sándwiches,207,218.7,0.1
+d18af150-1101-4b02-91c4-f22211d9abac,Sándwich de Jamón y Queso,Sándwiches,288,1420.44,1.8
+4913ae5a-85c8-4875-815c-94d84bb39691,Wrap de Carne,Wraps,294,987.5,2.31
+53de3d5e-1b98-4b75-bd7e-5e17ea048369,Sándwich de Atún,Sándwiches,473,1595.97,0.17
+0a47c873-bb30-4b40-86e2-6bc58ab5d019,Chips de Papa,Bocadillos Salados,125,1170.52,1.36
+17891bb3-2223-4584-82fb-4bebf42bcbd4,Wrap de Carne,Wraps,338,1390.87,1.08
+64f3a742-a8ff-4949-abd6-2e46bdf2a839,Wrap de Carne,Wraps,388,1057.39,1.3
+c64c0b68-6140-47b1-b9b1-955b7f88d78d,Medialuna,Repostería,136,319.54,2.03
+3305e990-43f0-466c-93fc-247414e3b60a,Chips de Papa,Bocadillos Salados,427,501.79,2.07
+d79e9f9f-3dd3-4a19-ad8e-ef6abf68f13c,Agua Mineral,Refrescos,448,1016.16,0.57
+0dced68f-6d70-4a9c-b608-3f9c5cf35ff9,Jugo de Zanahoria,Jugos,441,643.74,2.43
+1209b164-9ae6-48b5-b1b9-e5e72b468f68,Wrap Vegetariano,Wraps,123,1526.82,2.18
+fa41d492-14dd-4455-a2c9-b137bd18f366,Jugo de Zanahoria,Jugos,179,131.7,0.79
+95a12024-0aef-43ef-ada8-efa46b400b52,Wrap de Carne,Wraps,495,1160.51,2.21
+fb33c602-1f47-4380-beef-eccf04a25b27,Wrap de Pollo,Wraps,175,362.29,0.34
+d636cf3e-5a14-454c-9695-63c3c90600d2,Batido Proteico,Batidos,59,1397.39,0.71
+1f5c4971-73eb-455d-b2b5-cd0ca1cd9203,Agua con Gas,Refrescos,366,448.88,2.34
+98d0e227-7bed-4c8f-9d31-560e6e53775a,Wrap de Carne,Wraps,484,1597.05,2.01
+21b71346-07a6-4275-8e67-f105cd8efbd0,Empanada de Carne,Bocadillos Salados,367,1502.28,1.59
+a4412aff-4f4c-431b-9b39-f16163542f09,Ensalada de Quinoa,Ensaladas,336,691.31,0.99
+2f9fef06-5eaf-42e0-9f7c-b3fe3138a786,Jugo de Zanahoria,Jugos,258,1003.03,2.21
+97e447ea-2a69-4776-9b99-4024636bdccb,Ensalada de Quinoa,Ensaladas,287,1565.84,2.39
+54c82e14-a0a3-4be8-b6e3-412ae2066902,Ensalada de Quinoa,Ensaladas,258,774.8,1.47
+2b9a9211-f837-423e-8ab7-1f751762b1e4,Cookie,Repostería,62,1347.06,1.02
+0f12e4be-5ccf-4341-a7c1-b42ca5b3be2e,Ensalada César,Ensaladas,253,336.19,2.44
+1ae73489-f4ea-479c-8dc9-accc481e6599,Jugo Detox,Jugos,66,1468.75,1.31
+d420c55b-64bf-4577-b9de-980a731a957c,Capuccino,Infusiones,124,712.03,1.37
+aec402c2-748c-40f8-85a0-d75350583651,Sándwich de Jamón y Queso,Sándwiches,314,1456.79,1.46
+35259fd2-01cd-49a7-8228-1ad658da16ab,Batido Proteico,Batidos,114,1580.68,1.68
+0a262ede-55ed-44dd-8d3c-f463aec03f02,Medialuna,Repostería,167,703.16,1.54
+6f193736-fba0-4f4f-8bdd-25d31c87e0e0,Batido Proteico,Batidos,223,332.13,0.62
+02ffb12a-79de-40d6-9b49-966255e3f456,Agua Mineral,Refrescos,53,711.67,2.06
+524d5702-8999-442b-940d-4b1ca0fcc2a8,Wrap Vegetariano,Wraps,294,1268.28,0.82
+87541a5c-2ce4-4fd9-84ca-9519bd0be857,Espresso,Infusiones,275,944.12,0.49
+7790d796-d051-4923-9d1d-5436a750bb10,Ensalada de Quinoa,Ensaladas,431,1544.09,0.55
+77f0855d-3121-4f71-b1f2-7a12e18f035f,Batido de Frutilla,Batidos,447,1572.08,0.07
+fe321140-d8c9-41a7-81c0-f257da728d2f,Wrap Vegetariano,Wraps,81,776.84,1.75
+532cfcee-de69-4287-843d-9cfa8cbb4b63,Empanada de Pollo,Bocadillos Salados,330,755.08,0.99
+bf28e385-fcc2-45de-9ea1-6e0069cac7d6,Latte,Infusiones,259,1568.55,0.14
+d398724b-1bee-4978-a4e1-d7e3cbf8ea04,Capuccino,Infusiones,334,1586.19,0.84
+18253c6e-0e6b-49de-b56b-1b437d1c7b4b,Agua Mineral,Refrescos,126,1707.56,1.27
+9a430fe8-c40e-47e6-87e9-8b85b5dcbe22,Nachos con Queso,Bocadillos Salados,77,460.63,1.11
+1fd4bda3-e6b9-4471-af5c-979816e29fbd,Batido Proteico,Batidos,95,1328.42,1.26
+90a2aee6-bcb7-450a-a46b-31a2a404692f,Jugo de Zanahoria,Jugos,410,100.7,1.53
+593d22da-69b2-4fe1-9f21-18b1834edde1,Sándwich de Jamón y Queso,Sándwiches,445,1054.98,1.35
+5ec2150e-3881-49e9-a429-7374fc1f4681,Wrap de Carne,Wraps,213,1159.29,1.39
+fcf0c03a-ca7c-42aa-ae62-c3235690f809,Sándwich de Atún,Sándwiches,129,919.32,0.34
+c7386849-d7e9-4e1c-bf6a-08a0fed80584,Capuccino,Infusiones,363,761.64,0.46
+fe8540fb-477b-4ad6-8930-3dd244abc695,Sándwich de Pollo,Sándwiches,144,1344.98,0.89
+fd0f4af1-d879-4436-98e2-58ab5b7c1971,Sándwich de Pollo,Sándwiches,117,1239.55,0.06
+18d52975-46d0-4a2c-8813-9cc99c9e4b1a,Sándwich de Jamón y Queso,Sándwiches,176,1573.86,0.53
+f7929d4c-df64-4d5e-976f-038ae4976c3a,Té Negro,Infusiones,441,1490.69,0.37
+fed00e4f-d0b4-478c-bd8b-1d015b9fbe11,Wrap de Pollo,Wraps,336,1551.78,0.97
+f0845424-099f-4238-b0ea-c85aa1279a81,Nachos con Queso,Bocadillos Salados,159,1554.95,0.02
+b2c30f70-c4fd-4cdf-9989-0f31565b508f,Batido de Mango,Batidos,190,1440.31,0.44
+2e600865-d2fa-403d-9ff9-3c7c4d4d00a6,Ensalada Mixta,Ensaladas,148,1539.47,2.12
+f99d8f9a-4526-4c18-8f74-424f3a0058d8,Sándwich Vegetariano,Sándwiches,294,480.06,0.74
+ce3b8f83-c9d7-48f5-b8d5-400196f1bb9d,Café Cortado,Infusiones,493,162.85,1.16
+bbd29638-978b-413b-96ee-aeea3c6e2815,Latte,Infusiones,495,576.63,0.94
+6d3e19ff-de81-4357-9012-e7f61a4cf062,Gaseosa Lima Limón,Refrescos,62,437.0,2.46
+ab217cba-7775-41ec-910d-7db634688ea4,Café Cortado,Infusiones,239,1138.48,1.7
+724e2653-a50e-412a-a461-53102626fab9,Batido de Frutilla,Batidos,280,1626.2,1.72
+9a6d8584-91ff-454c-a19d-8595658a63e4,Ensalada de Quinoa,Ensaladas,247,635.29,0.51
+ec2d5f8e-5fd1-4191-be91-bc200ab9e7f5,Ensalada Mixta,Ensaladas,498,1003.6,1.64
+3a0d68f4-c331-4d8f-a9e6-85e5cc23fef6,Jugo Detox,Jugos,416,1231.27,0.63
+945fd949-2b21-48fa-bf64-0f9aa4eb07be,Cookie,Repostería,347,1356.67,2.09
+db13f5d2-f80e-4ea6-b211-a50569daf65b,Jugo de Zanahoria,Jugos,97,935.57,2.0
+c6d59689-131e-41ef-b29f-cb39de518276,Agua con Gas,Refrescos,224,800.55,0.26
+a612c66f-0d8f-4434-ad5f-1d92b6d2fd9a,Wrap de Carne,Wraps,207,1684.67,1.92
+96ca05c5-9329-4a07-bb55-c17f133fd634,Wrap Vegetariano,Wraps,337,1591.53,2.23
+c6231b66-3c5a-48f5-afc5-f29e3ab771ba,Cookie,Repostería,335,1676.21,1.66
+c3c49cf2-a1b5-489a-b81d-c73160db15f1,Batido de Mango,Batidos,311,990.68,0.07
+d32a66b4-62c1-42fa-9c19-ded3bdf96d73,Chips de Papa,Bocadillos Salados,401,230.09,2.3
+099fef00-e376-4c73-a455-efe7078ef08c,Té Negro,Infusiones,240,442.9,0.26
+439172eb-e158-43fc-bfa9-e6d581c8aa32,Té Verde,Infusiones,428,1380.9,0.05
+f66dd6ee-ddd7-44fd-989f-347d2bc954dc,Chips de Papa,Bocadillos Salados,459,138.92,0.12
+0f6b7de8-20ce-41eb-9855-2e71fc917c3a,Café Cortado,Infusiones,283,1263.92,1.89
+deece1d8-7bc4-4770-8d8b-9b05c2bf4f3f,Sándwich Vegetariano,Sándwiches,252,774.65,0.35
+22b5b1d3-5e17-44da-b80b-ea0d170cd2a7,Cookie,Repostería,64,741.26,0.72
+fa165f14-1f34-4d33-bd53-cb349149f57a,Wrap Vegetariano,Wraps,161,1335.41,1.12
+65397f33-8a7a-451a-a578-e5a94f289793,Gaseosa Cola,Refrescos,148,374.96,0.96
+f7acd503-7212-46c5-85e6-0beabc53e52f,Latte,Infusiones,157,1632.51,1.85
+dfb65a66-452e-49f9-949e-0e1e3ea453b7,Wrap de Pollo,Wraps,80,1619.51,0.1
+d7713679-c0cc-462b-8603-e532ded8a233,Ensalada César,Ensaladas,67,263.55,1.28
+849eb72d-5cd5-4440-b519-be1ff8bcc0fb,Gaseosa Lima Limón,Refrescos,253,830.04,1.97
+2aed2c82-4cd2-4249-b15d-8859a669ea57,Sándwich de Jamón y Queso,Sándwiches,260,1236.75,2.38
+f510a7c6-69c7-4db5-aee7-5de4ed2fddd6,Gaseosa Cola,Refrescos,331,1129.2,1.72
+4d56e5f4-5adb-4273-9dd7-4275c0183c03,Empanada de Pollo,Bocadillos Salados,449,1751.96,1.93
+ca8a8aac-e399-469b-b5d4-7843656fbf35,Jugo Detox,Jugos,241,1118.09,1.94
+5e33f7e1-62aa-4bdd-9a63-6c0b691415db,Cookie,Repostería,60,898.89,0.5
+5c605c9e-a7c3-4766-a511-85a31bb34c2e,Sándwich de Pollo,Sándwiches,165,805.28,1.8
+cfdbf1c1-be37-4a7b-ae3a-3b1d18ca1f42,Chips de Papa,Bocadillos Salados,490,1333.23,0.99
+682ca31f-1a32-4918-a076-81c36bebbfdf,Batido de Frutilla,Batidos,338,587.51,0.84
+2201d415-5e20-4078-b397-b8376c679b0b,Agua Mineral,Refrescos,321,571.5,1.73
+9ae3fefe-1fc6-4894-afbf-fda710a182d6,Muffin,Repostería,445,1695.52,1.75
+1b5b86c5-5450-4372-8e90-e45a364c9e27,Empanada de Pollo,Bocadillos Salados,139,1665.8,1.19
+072f6007-4c63-4241-b07d-3f2f014ca01d,Sándwich Vegetariano,Sándwiches,190,892.96,0.29
+2eb17f20-0175-4568-a72a-71c6bfb6e1cd,Capuccino,Infusiones,257,922.12,1.64
+cf85dd79-9980-4598-943b-ff6f11788aa7,Ensalada Mixta,Ensaladas,379,635.94,0.83
+530caec9-921b-49cb-81bf-ed68ddd6fd1f,Capuccino,Infusiones,352,453.72,2.07
+bebdc23f-296d-436f-a895-106ca84153bd,Jugo de Naranja,Jugos,387,1589.43,1.81
+8e287a26-de4e-41a5-89dc-3fe57b089fa2,Muffin,Repostería,295,718.25,1.94
+ebb6649e-f6b7-464e-94dd-977e96ac02c5,Batido de Mango,Batidos,390,412.0,1.06
+875c97fc-abdb-4f7a-9abb-8fc181e68339,Sándwich de Pollo,Sándwiches,264,512.29,0.38
+0136d494-0509-4867-8d7f-1143ae90c5eb,Wrap Vegetariano,Wraps,230,980.41,0.82
+b68e9d90-6de6-4f92-8194-60dea62047e4,Batido de Mango,Batidos,171,1494.09,0.63
