@@ -1,0 +1,501 @@
+nombre,edad,fecha_ingreso,salario,empleado_fijo,nombre_departamento,nombre_puesto
+Virginia del Falcó,27,2015-11-28,307203.59,0,Investigación y Desarrollo,Consultor
+Alberto Calleja Juárez,59,2020-07-10,692206.76,1,IT,Coordinador
+Poncio Meléndez Pineda,33,2011-01-03,372029.94,1,Ventas,Desarrollador
+Celestino Atienza Manrique,31,2012-03-23,310473.39,1,Recursos Humanos,Especialista
+Adriana Cantón Gisbert,42,2013-11-11,572856.28,0,Investigación y Desarrollo,Asistente
+Hernán Cabañas Taboada,42,2023-02-14,357985.24,0,Ventas,Director
+Fanny Sevilla Roselló,28,2012-05-02,252302.55,1,Ventas,Asistente
+Felisa Cabo-Montesinos,33,2016-08-29,493965.0,0,IT,Trainee
+Leocadio Narváez Grau,34,2009-03-24,598063.92,1,IT,Analista
+Julio Haroldo Valverde Martí,29,2022-12-16,270828.57,1,Investigación y Desarrollo,Asistente
+Berta Rebollo Muro,44,2025-07-10,414992.88,0,Marketing,Analista
+Arsenio Ferrández,60,2024-11-17,213515.05,1,Marketing,Director
+José Luis Buendía Hoyos,24,2008-08-05,237094.5,0,Ventas,Desarrollador
+Loreto Vázquez Peláez,31,2025-06-19,414718.43,0,Marketing,Trainee
+Gervasio Bayo Ribera,58,2009-03-22,279720.09,0,Recursos Humanos,Consultor
+Nidia Jover Batlle,62,2015-08-22,232141.08,0,Investigación y Desarrollo,Analista
+Roberto del Mayol,21,2019-02-04,303493.18,0,Marketing,Coordinador
+Olalla Cerezo Dávila,33,2024-07-02,568945.07,0,Marketing,Desarrollador
+Juan Pablo Nicolau Torrents,48,2007-09-09,323811.24,1,Ventas,Coordinador
+Juan José Quintanilla Casas,56,2010-03-20,678069.4,0,Finanzas,Desarrollador
+Geraldo Peralta Carballo,23,2010-05-05,485973.34,0,Ventas,Trainee
+Porfirio Fuertes Santiago,44,2008-12-03,698544.05,0,Recursos Humanos,Soporte Técnico
+Eli Blanca Peral,53,2015-03-18,369795.03,0,Marketing,Coordinador
+Eustaquio Sureda Quintanilla,56,2014-02-21,211894.17,1,Investigación y Desarrollo,Desarrollador
+Esther Gil Valbuena,28,2025-01-23,354687.44,1,Marketing,Trainee
+Anacleto de Dalmau,23,2018-03-25,492025.09,0,Finanzas,Asistente
+Lisandro Roman,55,2021-04-02,337953.38,0,Investigación y Desarrollo,Asistente
+José Antonio Villar Múñiz,57,2010-04-20,385235.42,1,Marketing,Coordinador
+Encarnacion Pineda-Alfonso,38,2025-01-18,390053.14,1,Finanzas,Coordinador
+Juan Carlos Sanjuan Pulido,65,2008-11-20,345734.21,0,IT,Coordinador
+Jose Angel Agustín Pozuelo Roldán,32,2012-04-06,644733.8,1,Logística,Soporte Técnico
+Celestina Bertrán Galindo,20,2012-04-01,546560.55,0,Finanzas,Analista
+Carmelita Valverde Moles,22,2022-10-07,393291.11,0,Finanzas,Desarrollador
+Benigno Benavent-Flores,47,2006-02-05,444473.95,0,Logística,Analista
+Eva Alemán,64,2022-08-16,324634.27,1,Recursos Humanos,Consultor
+Jerónimo Ciro Sedano Ayala,32,2012-04-30,614310.43,1,Ventas,Desarrollador
+Reina Blanch Sanjuan,21,2018-10-11,353523.59,0,Logística,Coordinador
+Alondra Diaz Sans,28,2022-09-26,549723.28,1,Investigación y Desarrollo,Asistente
+Begoña Julia Zamorano Arco,41,2017-05-19,418226.36,0,Recursos Humanos,Especialista
+Rafael Aragón-Guzman,51,2007-07-04,272264.58,0,Finanzas,Especialista
+Virginia Andreu Ojeda,22,2024-09-08,461076.47,0,Investigación y Desarrollo,Asistente
+Eladio Gomis Miranda,39,2009-06-27,420468.17,1,Logística,Consultor
+Ismael Josep Bermudez Coloma,64,2019-01-07,249831.29,1,Finanzas,Gerente
+Marcio Guitart,57,2018-09-19,494516.49,0,Ventas,Consultor
+Juan Luis Echeverría-Tapia,30,2013-05-08,260710.93,0,Marketing,Asistente
+Ascensión Molina Paniagua,22,2008-02-16,601477.12,0,Finanzas,Coordinador
+Graciela de Soler,41,2007-01-05,488758.08,0,Recursos Humanos,Director
+Cesar Mayol Pineda,57,2011-09-05,588408.02,1,IT,Director
+Pili Azahar Cárdenas Arroyo,53,2009-07-11,550051.23,0,Finanzas,Soporte Técnico
+Herminia Chelo Mayoral Ayala,44,2009-08-09,246808.91,0,Finanzas,Gerente
+Marcos Reguera Verdugo,54,2014-04-11,384927.38,0,Finanzas,Analista
+Gloria Selena Herrera Rebollo,47,2023-10-13,251417.07,1,IT,Especialista
+Hector Ripoll Vila,34,2019-07-22,533634.57,0,Marketing,Gerente
+Jesús Toledo Vallés,32,2009-11-03,659271.69,0,Investigación y Desarrollo,Especialista
+Miguel Ángel del Ibañez,65,2017-02-23,214620.72,1,Investigación y Desarrollo,Director
+Iván Rosario Cuesta Acuña,29,2011-12-20,511704.61,0,Finanzas,Asistente
+Soledad Tovar Martínez,20,2006-11-07,569269.67,1,IT,Trainee
+Emigdio Sanmartín Cano,27,2022-05-20,396760.88,0,Ventas,Analista
+Xavier Sala Prat,45,2015-08-22,632541.21,0,IT,Asistente
+Patricio del Palomo,47,2022-01-15,424921.06,1,Marketing,Analista
+Goyo Bertrán Ibáñez,51,2011-02-09,538941.09,1,Ventas,Trainee
+Aarón Toledo Morera,54,2009-03-06,672429.73,0,Investigación y Desarrollo,Especialista
+Carlos Rueda,56,2020-10-09,217924.16,0,Recursos Humanos,Coordinador
+Adora Tomas Carballo,47,2012-07-01,591868.79,0,Recursos Humanos,Coordinador
+Inés de Bertrán,59,2007-01-31,396803.23,0,IT,Desarrollador
+Paz Marín Bermejo,35,2020-10-13,294484.34,0,Ventas,Gerente
+Isidro Herrera Reguera,31,2014-07-19,398081.67,1,Recursos Humanos,Asistente
+Clara Anna Cardona Baena,41,2013-11-30,477172.68,0,Ventas,Analista
+Hortensia Gargallo Lerma,28,2009-02-16,441925.04,0,Ventas,Desarrollador
+Blanca del Alvarado,33,2020-09-03,498330.99,0,IT,Director
+Julia Morales Diaz,32,2023-01-03,205396.64,1,Logística,Analista
+Merche Bayona León,48,2013-11-29,424477.59,0,Marketing,Desarrollador
+Tatiana Iglesia Verdugo,35,2018-03-21,583485.63,0,Investigación y Desarrollo,Desarrollador
+Marciano Araujo Zapata,53,2020-05-03,629398.21,0,Logística,Asistente
+Merche Marquez Tormo,65,2008-04-23,580524.54,0,Logística,Asistente
+Leocadio Toro Moreno,32,2015-03-05,588065.73,1,Investigación y Desarrollo,Especialista
+Lidia Yolanda Quesada Prats,30,2017-09-14,679510.44,1,Logística,Soporte Técnico
+Mateo de Antúnez,24,2022-05-21,279411.04,1,Marketing,Desarrollador
+Hermenegildo Morcillo Rodrigo,25,2017-06-29,511384.66,0,Finanzas,Especialista
+Gaspar Fernández Losada,23,2024-01-17,272895.25,1,Logística,Gerente
+Inmaculada Tur Malo,40,2009-05-02,435221.93,1,Investigación y Desarrollo,Asistente
+Rosalinda Aura Peña Guitart,22,2011-10-12,488970.06,0,IT,Director
+Blanca Díaz Arévalo,53,2007-08-12,674669.47,0,Investigación y Desarrollo,Director
+Maxi del Villalonga,33,2013-12-28,321893.0,0,Investigación y Desarrollo,Gerente
+Bibiana Lara-Peñas,31,2012-03-23,680067.1,1,Recursos Humanos,Desarrollador
+José Antonio Pujol Cabañas,27,2023-06-28,254366.09,0,Investigación y Desarrollo,Trainee
+Delia Castejón,25,2014-08-10,485459.89,0,Marketing,Asistente
+Miguel Ángel del Herranz,48,2020-08-29,366738.74,0,Recursos Humanos,Trainee
+Gustavo Montoya Herranz,38,2025-08-24,515169.91,1,Finanzas,Consultor
+Ezequiel Hoyos Cisneros,31,2024-10-30,500642.73,1,Logística,Gerente
+Florentino Martinez,29,2024-11-26,385626.86,0,Ventas,Director
+Marcio Galan,62,2023-06-20,214622.55,1,Marketing,Desarrollador
+Glauco Flor Ferrández,33,2014-11-08,366864.21,1,IT,Director
+Elías Martí-Folch,23,2018-04-09,228125.82,0,Recursos Humanos,Consultor
+Angelino Palma Miranda,24,2016-08-28,569749.48,0,Finanzas,Director
+Corona Bustamante Talavera,37,2008-05-04,275179.83,0,Ventas,Soporte Técnico
+Jimena Pujadas Macías,34,2014-10-09,572461.18,0,Recursos Humanos,Consultor
+Angélica Cid Franch,39,2020-10-28,675561.92,1,Finanzas,Analista
+Eloy Crespo-Carballo,21,2014-01-24,371693.39,0,Logística,Asistente
+Donato de Mayoral,59,2017-03-01,660442.01,1,Recursos Humanos,Consultor
+Ani Raya Nicolau,60,2009-05-11,292221.29,0,IT,Gerente
+Isabel Quintana Jimenez,29,2013-06-28,373357.43,0,Logística,Especialista
+Mirta Araujo Soto,48,2015-04-09,441199.52,1,IT,Coordinador
+Aarón del Campos,30,2015-10-03,642524.01,0,Investigación y Desarrollo,Especialista
+Toño Ruy Roca Velasco,65,2009-05-15,657148.0,1,IT,Desarrollador
+Teresita Roura Muñoz,20,2025-08-16,366746.79,1,Ventas,Gerente
+Jessica Carbonell Iborra,27,2012-10-24,622052.21,1,Ventas,Trainee
+Fernanda Santana-Ferrándiz,35,2005-12-20,315879.06,1,Logística,Asistente
+Griselda Ureña Tomé,41,2015-12-25,532420.1,0,Finanzas,Director
+Javiera Ferreras Juan,26,2023-07-10,525025.48,0,Finanzas,Asistente
+Mohamed Iriarte Camacho,53,2022-01-13,602332.84,1,Logística,Gerente
+Elpidio Valentín Olmedo,47,2009-11-18,425738.13,1,IT,Trainee
+Juan Francisco Bayo Costa,58,2008-05-18,236360.03,0,Ventas,Trainee
+Maximiliano Ferreras Alemán,63,2011-06-24,503968.29,1,IT,Gerente
+África Rueda Cabañas,38,2010-12-17,299366.46,1,Investigación y Desarrollo,Analista
+Mónica Doménech Maza,48,2023-06-23,664189.54,0,Investigación y Desarrollo,Especialista
+Bernardita Andres Arias,23,2024-07-04,486930.66,0,Ventas,Consultor
+Leticia del Piquer,31,2017-11-14,217636.86,0,IT,Asistente
+Esteban Nadal-Barrio,51,2014-10-07,353424.33,1,IT,Analista
+Telmo Ambrosio Redondo Haro,31,2006-11-05,258386.7,0,Investigación y Desarrollo,Especialista
+Mar Barrio Borrell,51,2006-03-04,328164.13,1,Ventas,Director
+Celestino Barros-Lopez,61,2022-10-20,555585.39,0,Recursos Humanos,Consultor
+Blanca Salom Calzada,43,2012-10-16,656406.38,0,IT,Soporte Técnico
+Adriana Font-Capdevila,23,2010-10-27,375941.03,0,IT,Asistente
+Evelia de Taboada,40,2007-01-28,672437.02,1,Logística,Especialista
+Samu Nicolau Real,38,2015-12-28,659304.19,0,Marketing,Consultor
+Armando Castells Quintanilla,47,2025-01-08,348021.61,0,IT,Asistente
+Aarón Blasco Nicolau,61,2010-08-13,373720.42,1,IT,Coordinador
+Raimundo Melchor Maldonado Pizarro,33,2012-07-15,366453.08,0,Logística,Coordinador
+Melchor Salcedo Carrillo,59,2006-03-23,634705.69,1,Logística,Director
+Néstor Leon,27,2016-07-25,458642.45,0,Investigación y Desarrollo,Asistente
+Julieta Cabeza Sanchez,47,2025-09-26,681303.83,0,Ventas,Coordinador
+Primitivo de Lago,62,2020-05-11,378610.28,1,Ventas,Director
+María Ricart,41,2012-09-21,203598.95,1,IT,Coordinador
+Eladio Téllez Giralt,54,2007-07-01,341253.75,0,IT,Coordinador
+Teodosio Alcolea Riquelme,62,2020-09-23,265559.01,0,Marketing,Desarrollador
+Adelina Elisa Samper Criado,41,2022-10-19,336982.07,0,Ventas,Consultor
+Rosa Torrijos Olivera,23,2021-03-04,546856.15,1,Marketing,Director
+Palmira Jordán Guerrero,54,2018-07-15,549202.95,0,Recursos Humanos,Desarrollador
+Carmelita Manola Mercader Ferrando,25,2018-06-01,533115.3,1,Logística,Soporte Técnico
+Joaquina Carmona Ochoa,33,2024-01-14,517749.92,0,Recursos Humanos,Especialista
+Serafina Arroyo,56,2006-09-06,567176.09,0,Ventas,Soporte Técnico
+Carlos del Gras,61,2021-06-04,409308.92,0,Investigación y Desarrollo,Desarrollador
+Bernardino Llanos Parra,53,2024-09-27,485984.05,0,Logística,Desarrollador
+Belén Amor Redondo,47,2023-05-16,642256.61,1,Logística,Desarrollador
+Lucía Maxi Duran Ángel,31,2011-03-04,418066.81,1,Logística,Consultor
+Dulce Maestre Talavera,34,2011-12-26,534191.45,0,Investigación y Desarrollo,Director
+Leticia Azcona Parra,30,2010-06-22,450136.04,0,Recursos Humanos,Director
+Zacarías Gallardo-Pujadas,58,2012-06-19,359712.08,0,IT,Coordinador
+Salvador Agullo Pinedo,61,2011-08-23,291695.65,1,Ventas,Director
+Aníbal de Esparza,54,2014-03-14,397550.9,0,Ventas,Gerente
+Fulgencio José Ángel Mateos Sainz,55,2021-03-06,449631.6,1,Investigación y Desarrollo,Analista
+Martín Egea,38,2015-12-13,382178.16,1,Investigación y Desarrollo,Consultor
+Malena Dominguez Cortina,65,2020-05-21,558173.24,0,IT,Gerente
+Esperanza Hidalgo,38,2025-08-22,264113.16,0,Logística,Consultor
+Luciana Lobo Mena,51,2018-11-02,599498.42,1,Recursos Humanos,Analista
+Manu Pinto Sacristán,64,2007-01-10,424221.97,1,Marketing,Gerente
+Remigio del Fuentes,24,2025-01-17,421464.77,1,Marketing,Coordinador
+Pili del Valentín,29,2014-09-11,601237.63,0,Logística,Soporte Técnico
+Pastora Duarte Villar,63,2009-03-26,588983.44,0,Finanzas,Especialista
+Mauricio Villegas-Andres,65,2013-04-15,697548.59,0,Investigación y Desarrollo,Asistente
+Bruno Alonso,43,2018-09-18,530685.59,1,Marketing,Desarrollador
+Amparo Castro Saldaña,51,2010-05-06,467947.89,0,Finanzas,Coordinador
+Etelvina Maldonado Guillén,28,2016-07-24,636051.4,0,IT,Soporte Técnico
+Encarna Mayol,20,2007-09-04,455355.77,1,Logística,Desarrollador
+Bernardino Busquets Español,43,2017-08-30,600271.76,1,Recursos Humanos,Desarrollador
+Primitiva Belda,37,2020-08-26,623829.58,1,Finanzas,Director
+Elvira Fátima Frías Guitart,59,2012-07-30,356325.69,0,Marketing,Asistente
+Domitila Perales Blazquez,61,2008-06-12,586022.24,1,Ventas,Especialista
+Carmelita Poza Poza,61,2012-05-11,501668.68,0,Investigación y Desarrollo,Trainee
+Santiago Cal Salinas,63,2014-08-30,315972.4,0,Recursos Humanos,Coordinador
+María Cristina Gimenez Cáceres,33,2011-01-24,261126.85,1,IT,Trainee
+Elisabet Apolonia Cepeda Company,28,2019-04-27,299385.7,1,Recursos Humanos,Soporte Técnico
+Heriberto del Vallejo,60,2017-02-05,395343.86,0,IT,Especialista
+Cintia Céspedes Guerrero,60,2024-03-20,505075.92,1,Recursos Humanos,Gerente
+César de Galván,47,2023-03-06,303169.89,0,Ventas,Analista
+Virginia Canals Campoy,30,2017-05-22,354202.93,0,Investigación y Desarrollo,Soporte Técnico
+Pascuala Dionisia Cerezo Torralba,37,2012-02-09,248577.33,0,Ventas,Desarrollador
+Régulo Campillo Moll,63,2007-11-26,690333.83,1,Marketing,Trainee
+Rafaela de Hidalgo,31,2007-01-10,645082.42,0,Recursos Humanos,Gerente
+Mauricio Ponce Alvarado,23,2012-12-20,204541.69,1,Investigación y Desarrollo,Director
+Victor Villanueva Figueroa,52,2011-12-17,475436.69,0,Finanzas,Consultor
+Macario Almagro Arnau,58,2012-07-01,586651.06,1,Investigación y Desarrollo,Director
+Amparo Hidalgo-Montero,61,2024-11-26,609668.81,0,Logística,Consultor
+Enrique Arjona Hoz,64,2024-01-07,653235.15,1,IT,Director
+Macaria Oller Guillen,31,2014-07-31,680698.65,1,IT,Director
+Román Crespi-Cañizares,47,2022-12-05,450512.23,1,IT,Trainee
+Ágata Aguilar Soler,31,2015-02-11,231512.78,1,Marketing,Desarrollador
+Chus Esteve Bello,23,2021-03-01,507726.44,0,Recursos Humanos,Consultor
+Graciana Botella Andreu,48,2022-11-10,674026.09,1,Marketing,Analista
+Cipriano Durán-López,56,2020-07-06,364891.36,1,Investigación y Desarrollo,Asistente
+Carlos Sabas Garriga Asenjo,34,2014-08-18,476200.11,1,Logística,Soporte Técnico
+Narcisa Pomares Carmona,43,2013-05-31,476507.03,1,Logística,Analista
+Bruno Barbero Fabregat,40,2013-06-24,635665.54,1,IT,Analista
+Bonifacio Valderrama Ricart,59,2014-09-05,224360.61,1,Finanzas,Desarrollador
+Manu de Castelló,52,2022-12-23,244530.15,0,Investigación y Desarrollo,Consultor
+Chucho Manolo Garay Cabeza,54,2017-02-04,485906.03,0,Marketing,Soporte Técnico
+Evaristo Agustín-Huguet,41,2013-08-26,523157.16,1,Finanzas,Analista
+Manuela Múñiz Lerma,31,2014-07-23,688434.0,0,Ventas,Asistente
+Matilde Castillo,25,2024-12-27,628565.59,1,Investigación y Desarrollo,Asistente
+Gil Cabanillas Tejedor,21,2013-05-16,209732.64,1,Marketing,Analista
+Samuel Manu Hidalgo Armas,47,2015-08-26,450065.98,0,Logística,Soporte Técnico
+Estefanía Amaya Carrasco Olmo,41,2019-02-23,273348.12,1,Ventas,Consultor
+Nilda Estévez Córdoba,29,2021-07-27,642350.71,1,Recursos Humanos,Trainee
+Leoncio Vélez Torre,52,2012-09-11,684877.58,0,Recursos Humanos,Analista
+Javi Moll Cabo,29,2024-06-03,456489.6,1,IT,Consultor
+Ale Rius Alberto,24,2013-02-28,441037.26,0,Finanzas,Coordinador
+Socorro de Bou,64,2018-01-21,683670.71,1,Logística,Soporte Técnico
+Celestino Ferrer-Bello,41,2015-04-07,652092.1,0,IT,Soporte Técnico
+Sancho Pancho Alberto Arana,49,2011-09-13,502966.44,1,Ventas,Desarrollador
+Ainara López Hidalgo,39,2023-10-28,657856.34,1,Marketing,Consultor
+Valentina Marqués Aznar,43,2009-11-28,419282.29,1,Recursos Humanos,Analista
+Eligia Olivia Pina Ferrández,28,2024-01-15,392934.77,0,Recursos Humanos,Analista
+Angelina Miró Rosa,57,2013-01-01,477539.71,0,Finanzas,Gerente
+Rocío Terrón Amorós,41,2011-10-28,394441.96,0,Logística,Coordinador
+Cándido Llabrés Losada,30,2022-05-07,638670.69,0,Investigación y Desarrollo,Trainee
+Carmelita Tormo,59,2022-05-16,547016.06,0,Ventas,Desarrollador
+Maximiano Valderrama Bustamante,40,2015-05-06,517070.16,0,IT,Analista
+Mateo Comas Cobo,24,2022-11-19,577525.1,0,Finanzas,Gerente
+Anabel Tomas Agustí,25,2022-12-26,556427.42,0,Finanzas,Desarrollador
+María Del Carmen Susanita Cervera Ojeda,20,2009-11-12,515735.39,0,Finanzas,Analista
+Claudia Raya Gordillo,49,2013-09-17,402314.45,0,Investigación y Desarrollo,Desarrollador
+Pili Pineda Ángel,63,2015-12-12,551321.92,0,Marketing,Consultor
+Luciana Arenas Bosch,27,2012-10-09,244864.49,1,Finanzas,Especialista
+Maristela Padilla Gallego,36,2012-12-31,438767.52,0,Recursos Humanos,Asistente
+Javiera Pomares Benitez,60,2020-02-05,302398.08,0,Marketing,Trainee
+Paz de Arco,23,2017-07-21,584770.6,0,Ventas,Consultor
+Liliana Gomila Mercader,55,2007-04-25,279044.33,0,Ventas,Asistente
+Celso Ramírez Arteaga,25,2020-05-31,594432.38,0,Logística,Asistente
+Filomena Bejarano Cobo,37,2011-05-18,430347.43,0,Finanzas,Desarrollador
+Ángeles Morán Aguado,31,2008-09-26,397748.95,1,Finanzas,Gerente
+Pastora Morata Gargallo,40,2010-02-27,644998.13,0,Marketing,Director
+Nieves Villena Roca,47,2023-08-21,252232.93,0,Investigación y Desarrollo,Asistente
+Desiderio Régulo Infante Vargas,35,2025-05-31,632931.59,1,Logística,Gerente
+Jenaro Ferrández Piñeiro,56,2008-12-05,384347.51,0,Finanzas,Coordinador
+Tamara Anita Osuna Beltran,35,2016-07-29,459899.16,0,Marketing,Asistente
+Sabina Ugarte Hurtado,62,2011-04-18,402097.96,1,Logística,Gerente
+Yaiza África Saldaña Canales,36,2021-10-20,608295.33,1,Marketing,Analista
+Fabián Raya Costa,26,2005-11-02,618968.64,1,Recursos Humanos,Desarrollador
+Santiago Carrasco-Coello,57,2014-07-05,378290.74,0,Marketing,Asistente
+Oriana Llanos-Diego,38,2025-09-17,438432.63,0,Finanzas,Desarrollador
+Amaya Núñez Guerrero,28,2020-03-02,313390.39,0,IT,Desarrollador
+Bibiana Roda Vall,40,2019-08-08,568993.27,0,Ventas,Desarrollador
+Julio Sureda Aguiló,24,2017-11-08,614634.13,0,Investigación y Desarrollo,Director
+Florentino Duarte Anguita,26,2020-04-21,535514.11,0,Ventas,Gerente
+Abril de Galvez,48,2007-10-11,596872.02,0,Finanzas,Director
+Gonzalo de Gámez,41,2009-09-10,359703.54,0,Finanzas,Coordinador
+Glauco Figuerola,26,2020-10-10,558699.96,0,Finanzas,Analista
+Hugo Jose Ignacio Mulet Morales,57,2012-08-31,697909.29,0,Logística,Consultor
+Blas Cabezas Vazquez,40,2011-01-16,649741.33,0,Ventas,Asistente
+Teodoro García Palomo,52,2013-01-19,560527.34,1,Recursos Humanos,Soporte Técnico
+Juanita Simó-Bas,37,2022-07-23,306878.95,0,Recursos Humanos,Trainee
+Perla Carrera Castrillo,31,2017-05-20,606085.72,0,Recursos Humanos,Desarrollador
+Apolonia Merino Gibert,54,2020-09-08,468316.02,0,Logística,Analista
+Soledad Bayona Castañeda,56,2022-03-04,324011.3,0,Marketing,Director
+Noé Ruiz Macias,28,2013-09-08,243629.04,1,Recursos Humanos,Director
+Eduardo Aguado Hoz,34,2014-01-23,355304.3,0,Ventas,Coordinador
+Eva Collado-Tomás,56,2016-05-22,256956.87,1,Finanzas,Gerente
+Petrona Mármol Llanos,29,2010-05-12,379853.58,0,IT,Soporte Técnico
+Úrsula Loreto Guerra Gascón,25,2006-03-15,466358.55,1,IT,Desarrollador
+Jorge Ballesteros,20,2014-09-07,302394.99,0,Investigación y Desarrollo,Trainee
+Ariadna Quero,21,2008-05-04,425093.97,0,Recursos Humanos,Soporte Técnico
+Cristóbal Sala Sanmartín,24,2011-11-15,652128.36,1,Finanzas,Desarrollador
+Julián del Giralt,33,2019-04-04,558199.94,0,Marketing,Asistente
+Antonia Diego Gilabert,63,2007-01-05,501379.79,0,Investigación y Desarrollo,Gerente
+Severo de Maldonado,44,2020-08-23,431447.05,0,Investigación y Desarrollo,Gerente
+Aurelio Ferrero Amat,54,2015-05-25,637133.98,1,Ventas,Director
+Angélica del Dueñas,31,2011-09-25,311776.5,0,IT,Especialista
+Julián Adán,59,2016-11-20,402771.76,0,Logística,Asistente
+Rafael Benítez-Ávila,61,2020-04-28,240422.73,0,Investigación y Desarrollo,Asistente
+Encarnación Guitart Borrell,24,2018-01-01,510788.78,0,Logística,Trainee
+Cruz Jove,62,2015-05-26,214372.27,0,Finanzas,Analista
+Amor Abad Haro,38,2020-07-29,279030.62,1,Logística,Asistente
+Agustín Estrada-Camino,64,2021-07-16,474729.76,0,Recursos Humanos,Consultor
+Agapito Soler-Valbuena,54,2006-10-10,580084.58,1,Logística,Soporte Técnico
+Marco de Pacheco,54,2008-01-23,535338.78,0,Logística,Asistente
+Desiderio Lluch-Santana,45,2011-05-16,424874.39,0,Ventas,Director
+Magdalena Armas-Vazquez,43,2021-05-14,460940.01,1,Investigación y Desarrollo,Soporte Técnico
+Rosalía Haro,55,2007-12-07,524974.54,0,Ventas,Soporte Técnico
+Edu Feliciano Bárcena Ricart,27,2024-01-14,473944.42,0,IT,Soporte Técnico
+Ariel Narcisa Miró Mir,48,2012-01-29,289577.27,1,Recursos Humanos,Especialista
+Nicanor Angulo Niño,23,2009-10-14,308711.76,0,Marketing,Trainee
+Áurea Alonso Jaume,33,2019-12-21,555529.65,0,Recursos Humanos,Soporte Técnico
+Tomasa de Alarcón,34,2012-12-20,660447.67,1,Recursos Humanos,Asistente
+Eladio Tapia Quesada,40,2015-10-14,245887.84,0,Finanzas,Trainee
+Darío Palomino Barco,64,2025-08-04,334584.75,0,Marketing,Asistente
+José Álvaro Leiva Prado,33,2024-10-18,260881.9,1,Finanzas,Gerente
+Santiago Cerdá Conde,39,2021-06-17,434338.74,0,Logística,Trainee
+Jessica Mendoza Alemany,29,2006-12-24,213813.67,0,Recursos Humanos,Director
+Pascual Vázquez Carlos,28,2007-04-13,331484.65,0,Marketing,Trainee
+Florina Valero-Girón,51,2013-06-30,214566.07,0,Ventas,Consultor
+José María Vélez Rincón,48,2006-03-31,698083.69,0,Investigación y Desarrollo,Consultor
+Aristides León-Anglada,61,2024-06-01,319703.98,1,IT,Director
+Regina Garriga,47,2019-06-20,654526.04,1,IT,Gerente
+Blanca Morante Elías,27,2006-05-07,297950.93,0,Marketing,Coordinador
+Nazaret Lozano Paredes,50,2007-05-31,250200.81,0,Logística,Especialista
+Eligia de Bermejo,41,2018-12-14,366525.17,1,Recursos Humanos,Coordinador
+Lope Blanch-Bou,60,2008-06-20,681658.13,0,IT,Director
+Jordana Losa Fuertes,26,2010-04-04,639971.49,0,Ventas,Gerente
+Isidro Valcárcel Morcillo,36,2019-09-12,478985.67,1,Marketing,Gerente
+Juanito Gimenez Pellicer,33,2013-02-12,699863.27,1,Recursos Humanos,Soporte Técnico
+Guadalupe del Carvajal,27,2015-07-16,402939.2,1,Investigación y Desarrollo,Especialista
+Octavio Cueto-Anaya,65,2010-05-24,636243.92,1,Marketing,Consultor
+Tania Bárcena Fortuny,30,2007-04-08,524014.98,0,Recursos Humanos,Desarrollador
+Angelina Gomez Quintero,33,2023-03-23,377380.21,1,Logística,Consultor
+Marcial de Bas,40,2023-05-07,309878.28,0,Finanzas,Soporte Técnico
+Severino Salcedo Solana,24,2023-11-11,336992.05,0,Ventas,Analista
+Gracia Guardia Montenegro,28,2016-02-06,625454.28,1,Investigación y Desarrollo,Trainee
+Ileana Montesinos,34,2010-09-06,214945.0,1,Ventas,Soporte Técnico
+Reyes Lago,33,2021-11-15,297493.04,1,Logística,Desarrollador
+Dimas Camps-Otero,29,2016-10-23,205949.41,1,Logística,Coordinador
+Guiomar Martín Pomares,33,2006-11-14,325802.92,0,Recursos Humanos,Trainee
+Constanza Grau Baró,28,2014-08-31,345275.04,1,Logística,Especialista
+Dan Lino Dueñas Castelló,46,2023-06-06,229801.87,1,Marketing,Desarrollador
+Amada Zabaleta-Estévez,22,2019-12-27,503145.27,1,IT,Analista
+Amaro Carrera Canet,32,2012-10-13,592324.89,0,Ventas,Desarrollador
+Faustino Miguel-Antón,59,2011-11-18,235390.01,1,Ventas,Coordinador
+Adelaida Palomo Guzman,55,2010-06-02,383826.77,0,IT,Coordinador
+Quirino Sevilla Zabaleta,52,2012-05-27,576736.69,1,Investigación y Desarrollo,Coordinador
+Olivia Valenciano Palacios,46,2024-03-02,602306.29,0,Marketing,Analista
+Chus Isaac Alcalde Cáceres,45,2024-04-21,546411.1,1,Recursos Humanos,Asistente
+Rodrigo Villegas,21,2025-07-14,317477.17,0,IT,Soporte Técnico
+Gertrudis Chamorro Abad,50,2018-10-17,367106.61,1,Ventas,Especialista
+Alberto Meléndez Torrent,26,2011-03-07,569359.33,0,Investigación y Desarrollo,Coordinador
+Isabel Ibañez Hernando,58,2018-02-27,303964.09,1,Recursos Humanos,Coordinador
+Máximo Manso Aragonés,30,2017-01-10,263347.99,0,Logística,Coordinador
+Toni Pozuelo Jáuregui,46,2023-11-15,474348.05,1,Investigación y Desarrollo,Asistente
+Delfina Corona Sabater Araujo,24,2024-12-31,321104.95,0,Recursos Humanos,Consultor
+Rogelio Trillo Fabregat,60,2008-07-18,221302.29,0,Logística,Director
+José Angelino Cañizares Fernández,65,2013-07-20,432278.26,0,Investigación y Desarrollo,Trainee
+Ruben Barrena Heredia,28,2006-11-22,374028.25,0,IT,Asistente
+Julio Laguna Figueras,48,2020-09-05,476641.72,0,Ventas,Analista
+Horacio Camino Carbajo,43,2025-07-18,498178.85,0,Recursos Humanos,Especialista
+Leonor Reyes Pinilla,60,2012-12-09,676960.45,0,Marketing,Trainee
+Iris Ballesteros-Doménech,45,2025-02-09,226287.54,0,Marketing,Desarrollador
+Emperatriz Calleja Galán,60,2005-10-01,681098.9,0,Recursos Humanos,Soporte Técnico
+Jordi de Sáez,50,2005-11-16,570356.77,1,Investigación y Desarrollo,Desarrollador
+Pancho Valenciano Pozuelo,21,2016-02-07,412978.96,0,Marketing,Trainee
+Candelaria Montoya Méndez,27,2022-05-17,237867.41,0,Marketing,Director
+Benito Porta Morcillo,48,2021-01-18,360934.33,1,Recursos Humanos,Consultor
+Joaquina Becerra Marco,61,2019-11-03,450417.32,0,Logística,Gerente
+Ofelia Checa-Torrens,62,2007-06-02,206832.6,0,IT,Gerente
+Felipe Flavio Amat Castelló,22,2009-06-09,400897.74,0,Finanzas,Consultor
+Viviana Bustos Coca,49,2013-11-14,682538.61,1,IT,Consultor
+Teobaldo Lucas Tomás Ibáñez,57,2005-11-21,406270.97,1,Marketing,Analista
+Eugenia Teruel Ferrer,41,2024-09-05,536562.49,1,Logística,Asistente
+Nico Múñiz-Crespo,24,2016-06-22,539996.29,1,Investigación y Desarrollo,Asistente
+Soraya Vidal Alvarado,47,2012-11-28,567952.58,1,Investigación y Desarrollo,Analista
+Albino Bayona Pozuelo,61,2020-02-27,589370.63,0,Recursos Humanos,Director
+Edgardo del Cruz,31,2017-02-19,211876.14,0,Finanzas,Analista
+Toño Marin Feijoo,46,2023-07-01,356463.34,0,Marketing,Trainee
+Rosario Juan Manuel Catalá Rico,50,2012-08-05,431855.29,1,IT,Soporte Técnico
+Esteban Arias Fábregas,58,2011-12-25,291878.4,1,Investigación y Desarrollo,Soporte Técnico
+Saturnino Carballo Gimeno,48,2017-01-27,331123.46,1,Recursos Humanos,Soporte Técnico
+Celso Pérez Núñez,51,2010-12-03,588667.72,1,Ventas,Consultor
+Maximiliano Porras Castell,60,2024-10-12,344190.94,0,Marketing,Director
+Amor Uría Nogués,46,2020-01-17,535247.14,0,Marketing,Trainee
+Salomé Alsina Palomar,34,2025-05-18,576697.35,0,IT,Trainee
+Leocadia Riera Llorens,20,2022-02-21,434001.14,0,Logística,Consultor
+Samuel Berenguer Ribes,40,2007-09-24,356644.75,0,Logística,Desarrollador
+Isaac Casals Ropero,60,2021-07-10,604785.98,1,IT,Director
+Alejandro Moraleda Mas,57,2013-07-12,593405.44,1,IT,Desarrollador
+Aura Vilar Piquer,33,2015-12-25,587527.75,1,Finanzas,Gerente
+Cayetana Royo Llobet,48,2009-06-16,698026.88,0,IT,Consultor
+Vilma Peñalver Pascual,51,2011-04-26,288994.92,1,Finanzas,Director
+Alicia Salvador Serra,24,2014-08-11,463023.92,0,Ventas,Soporte Técnico
+Fabiola Vigil Medina,42,2023-06-16,644971.39,0,Finanzas,Asistente
+Juana del Lerma,43,2011-08-25,249424.47,1,Logística,Director
+Olalla Corominas Cabo,37,2018-10-29,638390.42,1,Ventas,Soporte Técnico
+Narcisa del Cuervo,39,2015-07-17,229411.27,1,Logística,Soporte Técnico
+Clotilde Piñeiro Ferrán,48,2018-02-09,411670.95,0,IT,Gerente
+Sabas Gibert Rosell,50,2017-09-20,423613.82,1,IT,Coordinador
+Leoncio Santos Canales,45,2017-08-25,309039.58,1,Ventas,Soporte Técnico
+Elodia Zabala Páez,34,2012-01-23,495246.35,1,Marketing,Consultor
+Salomón Molins-Carro,45,2013-09-12,522540.76,1,Logística,Director
+Sergio Ávila Salgado,47,2008-02-27,407145.17,0,Finanzas,Director
+Lino Corominas Capdevila,48,2007-09-10,205059.31,0,IT,Consultor
+Viviana Iborra Díaz,60,2021-11-28,478389.04,0,Ventas,Asistente
+Juliana Viñas Sáez,21,2008-05-09,246504.91,0,Marketing,Consultor
+Juan Francisco Bustos Bauzà,20,2024-11-29,518042.91,1,Ventas,Director
+Federico Mendez Canales,26,2013-06-21,285365.45,1,Investigación y Desarrollo,Asistente
+Máximo Giralt Sanchez,47,2005-10-06,656799.15,1,IT,Trainee
+Mamen Cases-Casanovas,28,2013-07-22,632834.83,0,Recursos Humanos,Soporte Técnico
+Buenaventura Pedro Alcázar,26,2018-07-16,527967.93,1,IT,Trainee
+Dorita del Adán,22,2025-09-08,366492.09,0,Marketing,Director
+Samu Checa Calvet,52,2023-11-13,614894.13,0,Investigación y Desarrollo,Director
+Adora Abril Mur,37,2012-04-10,395697.74,0,Recursos Humanos,Analista
+Judith Coca Bárcena,23,2009-07-27,621828.62,1,IT,Asistente
+Melisa del Ramos,27,2018-10-10,369254.77,1,Finanzas,Analista
+Chus Sobrino Priego,54,2012-10-15,257201.08,0,IT,Gerente
+Filomena Riquelme Alcalde,44,2022-04-19,663233.67,0,Finanzas,Desarrollador
+Dorotea Almeida Roura,23,2023-11-27,350636.45,1,Logística,Coordinador
+Pánfilo Villalobos Valenciano,21,2019-01-01,328587.34,0,Recursos Humanos,Trainee
+Anunciación Elorza Alcalde,56,2016-10-14,311984.91,1,Marketing,Desarrollador
+Anselmo Carballo Font,40,2017-11-23,607346.98,1,Marketing,Gerente
+Aura Andrés,61,2009-03-08,363148.41,1,Logística,Desarrollador
+Gloria Araujo Rojas,34,2006-05-06,609640.82,1,IT,Director
+Rufino Lucena Peñas,32,2024-06-11,426240.93,0,Ventas,Desarrollador
+Ruperta Bas Leal,28,2007-10-10,643129.33,1,Investigación y Desarrollo,Trainee
+Cipriano del Baró,23,2024-04-19,402390.87,0,Marketing,Coordinador
+Paula Expósito Alfaro,60,2024-09-21,374151.35,0,Finanzas,Desarrollador
+Jose Miguel Aguilar Bermudez,51,2009-08-13,463570.72,1,Finanzas,Trainee
+Teodosio del Cabrera,39,2012-04-13,541003.2,0,Finanzas,Analista
+Macario Madrid,45,2021-11-05,306248.75,1,Marketing,Director
+Alejo del Martorell,31,2018-06-10,549622.22,0,Recursos Humanos,Consultor
+Porfirio Meléndez Bastida,59,2006-04-13,286903.81,0,Finanzas,Consultor
+Leire Peláez Hoyos,31,2005-12-03,446701.45,0,Logística,Director
+Renata Adán,30,2009-10-06,570141.97,0,Logística,Consultor
+Brunilda Ramírez Vallejo,37,2009-07-21,454175.42,1,Marketing,Analista
+Wálter Vilaplana Leal,56,2007-08-01,386087.78,0,Investigación y Desarrollo,Desarrollador
+María Pilar Agullo Poza,31,2009-02-06,586825.85,0,IT,Trainee
+Rubén Contreras,42,2012-08-19,467654.12,1,IT,Trainee
+Marisela Florentina Mendoza Galván,31,2010-04-06,402431.08,0,Ventas,Consultor
+Nuria Alberola-Rivero,48,2015-04-09,536328.74,1,Logística,Soporte Técnico
+Edelmiro Gámez Aramburu,55,2024-02-28,214522.64,1,Finanzas,Analista
+Guiomar Verdejo Mariscal,45,2014-06-20,267704.32,0,Ventas,Trainee
+Esther Patiño Cabezas,64,2006-08-27,542842.06,1,Finanzas,Soporte Técnico
+Ildefonso Roda Bosch,30,2010-10-27,564016.61,1,Recursos Humanos,Asistente
+Urbano Arteaga,38,2024-04-25,639818.2,1,Investigación y Desarrollo,Soporte Técnico
+Concepción Arranz Moreno,23,2020-03-10,294317.97,1,Recursos Humanos,Especialista
+Maximino del Chaparro,42,2007-09-20,415526.1,1,Recursos Humanos,Soporte Técnico
+Lupe Meléndez Boix,64,2013-07-31,494034.0,0,Investigación y Desarrollo,Especialista
+Román Tomas Martín,46,2014-07-10,367516.05,0,Logística,Director
+Lucho Gaya-Paniagua,55,2010-03-21,332022.51,0,Finanzas,Asistente
+Bárbara del Ricart,25,2020-01-03,555462.34,0,Marketing,Analista
+Estefanía Amores Pujol,33,2016-03-07,588833.51,0,Finanzas,Trainee
+Mercedes Villalobos-Zaragoza,20,2024-01-25,386985.89,0,Investigación y Desarrollo,Especialista
+Toño Juliá Nogueira,33,2007-07-27,571694.79,1,Finanzas,Trainee
+Pancho Salas Vendrell,45,2006-12-03,265017.75,0,Investigación y Desarrollo,Director
+Rosalía Manzano,23,2011-07-11,607968.11,1,Marketing,Coordinador
+José Mari del Barberá,58,2014-10-11,476630.74,1,Finanzas,Analista
+Maximino Salmerón Jiménez,32,2007-09-23,448215.87,0,Ventas,Trainee
+Eufemia Artigas Sáenz,64,2025-05-26,273157.44,1,Ventas,Consultor
+Adelia Abella Perales,63,2016-09-07,465067.83,0,Marketing,Consultor
+Ana Belén Herrero Salom,21,2012-10-16,502331.96,1,Investigación y Desarrollo,Gerente
+Hugo España-Pol,63,2012-08-15,353060.84,0,Recursos Humanos,Director
+Josefina Poza Peláez,23,2025-02-12,393045.76,1,Ventas,Consultor
+Feliciana Asunción Alonso Huguet,40,2011-09-23,446251.89,0,Investigación y Desarrollo,Coordinador
+Jesús Iborra-Salom,58,2009-03-02,382554.4,1,Investigación y Desarrollo,Especialista
+América Comas Luís,24,2006-07-26,360060.4,0,Logística,Coordinador
+Estefanía Godoy Pinilla,55,2006-06-15,680706.49,0,Investigación y Desarrollo,Analista
+Amarilis Fajardo Jáuregui,58,2014-03-24,294290.85,1,IT,Soporte Técnico
+Reina Victoria Porcel Escudero,62,2017-11-27,592354.43,0,Recursos Humanos,Director
+Alfredo Coca Porta,44,2018-07-21,231941.66,1,IT,Especialista
+Cayetano Porras Portero,59,2013-08-09,422827.73,1,Logística,Asistente
+María José Barranco-Fonseca,30,2017-05-09,300659.68,1,Marketing,Soporte Técnico
+María Dolores Arregui Vicens,60,2013-09-30,656103.0,0,Marketing,Director
+Jacinta Cañellas Soler,56,2018-10-01,658583.18,1,Finanzas,Trainee
+Margarita Dávila-Heredia,57,2019-03-14,204637.38,0,Finanzas,Soporte Técnico
+Nazaret Coloma-Rincón,20,2007-01-18,304014.63,0,Finanzas,Especialista
+Modesto Rivera Tamayo,44,2007-08-28,651828.51,1,Recursos Humanos,Analista
+Nico Anglada Melero,57,2012-06-10,206897.39,1,IT,Especialista
+Daniel Roig Gallego,34,2019-01-25,420308.93,0,Ventas,Desarrollador
+Horacio Calvet Roldan,49,2008-05-31,689264.33,0,Investigación y Desarrollo,Desarrollador
+Carla Macías Cases,30,2018-07-28,486822.77,1,Investigación y Desarrollo,Coordinador
+Dafne Falcón Velázquez,36,2012-07-22,627602.62,0,IT,Analista
+Tere Peláez,40,2008-04-21,462018.08,0,IT,Desarrollador
+Gertrudis Manu Gallart Tur,60,2015-06-19,627191.41,0,IT,Analista
+Marcelino de Colom,50,2017-10-15,595162.31,0,Marketing,Soporte Técnico
+Arcelia Lluch Fuentes,27,2024-03-16,570394.78,0,Investigación y Desarrollo,Analista
+Ramona Ariadna Cano Espada,44,2005-12-05,477879.03,1,Recursos Humanos,Soporte Técnico
+Hermenegildo Marquez Carro,25,2021-01-19,586820.49,0,Investigación y Desarrollo,Asistente
+Rufino Torralba Valderrama,61,2025-06-06,684382.86,1,Investigación y Desarrollo,Especialista
+Jimena de Llamas,24,2016-08-12,249785.35,1,Recursos Humanos,Director
+Tristán Mena Cantón,42,2018-09-13,387518.08,1,Logística,Trainee
+Gervasio Barco Cañas,45,2007-11-05,626569.62,0,IT,Analista
+Águeda Aznar Costa,63,2009-05-03,466776.27,1,Investigación y Desarrollo,Analista
+Teresita Cabrera-Cid,42,2011-06-14,684841.32,0,Finanzas,Desarrollador
+Candelas Gibert Blázquez,53,2021-10-29,608728.1,0,Finanzas,Gerente
+Dan Leal Oliveras,21,2006-11-21,233669.78,0,Marketing,Consultor
+Angelina Sans Padilla,43,2018-01-11,291820.97,0,Ventas,Desarrollador
+Bernarda María Manuela Castañeda Iborra,25,2024-02-26,611304.41,1,Finanzas,Director
+Régulo Iglesias Camps,42,2007-11-08,665241.83,0,Recursos Humanos,Consultor
+Sonia del Feijoo,29,2014-12-19,517308.2,1,Recursos Humanos,Gerente
+Ricardo Vigil Huertas,60,2018-05-15,518324.4,1,Ventas,Especialista
+Carlos Vaquero-Ribes,35,2024-02-03,575263.12,1,Marketing,Director
+Berto Fábregas Farré,28,2011-12-04,377140.78,1,Recursos Humanos,Gerente
+Miguel Ángel Rosell Ibáñez,25,2012-10-21,354381.4,1,Ventas,Coordinador
+Nieves Tejedor Vallejo,64,2015-01-04,436254.02,0,Finanzas,Desarrollador
+Herminia Galindo-Peiró,43,2015-08-31,436733.52,0,Marketing,Coordinador
+José Mari Ernesto Perea Cañizares,47,2015-09-10,400632.1,0,Ventas,Especialista
+Consuelo Remedios Reina Escolano,37,2017-03-30,634709.87,0,Recursos Humanos,Consultor
+Irene Lluch,30,2006-10-27,366520.59,1,Ventas,Director
+Blanca Cid Álvaro,24,2021-01-10,292593.72,1,IT,Director
+Alfredo Bernal Andrade,55,2021-03-23,563426.25,0,Marketing,Consultor
+Alejandra Blanca Barroso,27,2006-11-15,302158.7,1,Logística,Coordinador
+Itziar Roca,40,2012-05-06,347621.89,1,Investigación y Desarrollo,Coordinador
+Jose Ramón Alcázar Galvez,56,2024-08-18,455804.27,1,Finanzas,Trainee
+Felix Montaña Alba,61,2015-12-19,650432.14,1,Marketing,Director
+Aurelio Santos Sainz,37,2025-04-22,616977.58,1,Marketing,Desarrollador
+Natalio Garzón Pomares,33,2024-12-01,433908.26,0,Finanzas,Consultor
+Glauco Iniesta,39,2020-07-31,438695.27,0,Logística,Coordinador
+Eutimio Bastida-Badía,65,2010-02-01,272502.14,0,Investigación y Desarrollo,Coordinador
+Petrona Zurita,36,2024-08-08,306202.32,1,Logística,Director
+Micaela Luís,44,2024-03-07,211704.82,0,Investigación y Desarrollo,Asistente
+Cecilio Lluch Niño,45,2006-01-07,586165.69,0,Investigación y Desarrollo,Soporte Técnico
+Florencia Perez-Vigil,34,2024-01-17,383891.59,0,Marketing,Consultor
+Manuelita Martínez Milla,58,2021-06-10,201541.89,1,Investigación y Desarrollo,Especialista
+Martín Castejón Sales,26,2014-12-01,266019.26,0,Recursos Humanos,Coordinador
+Jesús Portillo-Blanca,23,2025-08-12,683177.3,0,Investigación y Desarrollo,Soporte Técnico
