@@ -1,0 +1,64 @@
+# --- Configuración general ---
+server:
+  port: 8083
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://postgres:5432/tpi_db
+    username: postgres
+    password: pgadmin123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+# --- Logs ---
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: INFO
+
+# --- URLs de otros microservicios (para RestClient) ---
+clientes:
+  service:
+    url: http://ms-clientes:8081/api
+
+geoapi:
+  service:
+    url: http://ms-geoapi:8084/api/distancia
+  connect:
+    timeout: 3000
+  read:
+    timeout: 5000
+
+flota:
+  base:
+    url: http://ms-flota:8082
+  camiones:
+    path: /api/camiones
+  tarifas:
+    path: /api/tarifas
+  parametros:
+    path: /api/parametros-tarifa
+  depositos:
+    path: /api/depositos
+
+# --- Swagger (Springdoc) ---
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+    try-it-out-enabled: true

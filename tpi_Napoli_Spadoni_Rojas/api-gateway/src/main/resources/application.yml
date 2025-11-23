@@ -1,0 +1,127 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        # /api/contenedores/pendientes
+        - id: ms-contenedores-pendientes
+          uri: http://ms-operaciones:8083
+          predicates:
+            - Path=/api/contenedores/pendientes
+          filters:
+            - StripPrefix=0
+
+        - id: ms-operaciones-contenedores-estado
+          uri: http://ms-operaciones:8083
+          predicates:
+            # Abarca /api/contenedores y /api/contenedores/{id}
+            - Path=/api/contenedores/**
+            - Query=estado, .*
+          filters:
+            - StripPrefix=0
+          order: -1
+
+        - id: ms-operaciones-contenedores-cliente
+          uri: http://ms-operaciones:8083
+          predicates:
+            # Abarca /api/contenedores y /api/contenedores/{id}
+            - Path=/api/contenedores/**
+            - Query=clienteId, .*
+          filters:
+            - StripPrefix=0
+          order: -1  
+
+        # ---- RUTAS HACIA MS-CLIENTES ----
+        - id: ms-clientes
+          uri: http://ms-clientes:8081
+          predicates:
+            - Path=/api/clientes/**, /api/contenedores/**, /api/ciudades/**, /api/provincias/**
+          filters:
+            - StripPrefix=0
+
+        - id: ms-operaciones-transportistas-tramos
+          uri: http://ms-operaciones:8083
+          predicates:
+            - Path=/api/transportistas/*/tramos
+          filters:
+            - StripPrefix=0
+
+        # ---- RUTAS HACIA MS-FLOTA ----
+        - id: ms-flota
+          uri: http://ms-flota:8082
+          predicates:
+            - Path=/api/camiones/**, /api/transportistas/**, /api/administradores/**, /api/depositos/**, /api/tarifas/**, /api/parametros-tarifa/**
+          filters:
+            - StripPrefix=0
+
+        # ---- RUTAS HACIA MS-OPERACIONES ----
+        - id: ms-operaciones
+          uri: http://ms-operaciones:8083
+          predicates:
+            - Path=/api/solicitudes/**, /api/rutas/**, /api/tramos/**, /api/seguimientos/**
+          filters:
+            - StripPrefix=0
+
+        # ---- RUTAS HACIA MS-GEOAPI ----
+        - id: ms-geoapi
+          uri: http://ms-geoapi:8084
+          predicates:
+            - Path=/api/distancia/**
+          filters:
+            - StripPrefix=0
+
+        # ---- SWAGGER UI ROUTES ----
+        - id: ms-clientes-swagger
+          uri: http://ms-clientes:8081
+          predicates:
+            - Path=/clientes/swagger-ui.html, /clientes/swagger-ui/**, /clientes/api-docs/**
+          filters:
+            - RewritePath=/clientes/(?<segment>.*), /${segment}
+
+        - id: ms-flota-swagger
+          uri: http://ms-flota:8082
+          predicates:
+            - Path=/flota/swagger-ui.html, /flota/swagger-ui/**, /flota/api-docs/**
+          filters:
+            - RewritePath=/flota/(?<segment>.*), /${segment}
+
+        - id: ms-operaciones-swagger
+          uri: http://ms-operaciones:8083
+          predicates:
+            - Path=/operaciones/swagger-ui.html, /operaciones/swagger-ui/**, /operaciones/api-docs/**
+          filters:
+            - RewritePath=/operaciones/(?<segment>.*), /${segment}
+
+        - id: ms-geoapi-swagger
+          uri: http://ms-geoapi:8084
+          predicates:
+            - Path=/geoapi/swagger-ui.html, /geoapi/swagger-ui/**, /geoapi/api-docs/**
+          filters:
+            - RewritePath=/geoapi/(?<segment>.*), /${segment}
+
+      # CORS (nuevas claves)
+      globalcors:
+        cors-configurations:
+          "[/**]":
+            allowedorigins: "http://localhost:5173, http://localhost:4200, http://localhost:3000"
+            allowedmethods: "*"
+            allowedheaders: "*"
+            allowcredentials: true
+
+security:
+  oauth2:
+    resourceserver:
+      jwt:
+          issuer-uri: http://keycloak:8080/realms/tpi
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    gateway:
+      access: read-only

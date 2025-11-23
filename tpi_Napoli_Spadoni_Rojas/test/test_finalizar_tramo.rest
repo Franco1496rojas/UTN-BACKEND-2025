@@ -1,0 +1,142 @@
+### EJEMPLO DE USO: FINALIZAR TRAMO
+### El endpoint ahora registra automáticamente la fecha de fin con la hora actual del sistema
+### y calcula automáticamente:
+### - Duración real (diferencia entre fechaHoraInicioReal y fechaHoraFinReal)
+### - Distancia real (mediante ms-geoapi con origen y destino del tramo)
+### - Costo real del transporte (usando consumo del camión, distancia, costoKmBase y cargoFijo)
+### - Costo de estadía (si el tramo viene de un depósito, calcula días y costo de estadía)
+### - Si es el último tramo de la ruta, completa la solicitud automáticamente
+
+### ============================================
+### PASO 0: Verificar el estado del tramo
+### ============================================
+GET http://localhost:8080/api/tramos/5
+
+###
+
+### ============================================
+### PASO 1: Iniciar un tramo (requisito previo)
+### ============================================
+### IMPORTANTE: El tramo debe estar en estado ASIGNADO para poder iniciarse
+### Si el tramo está en estado INICIADO pero sin fechaHoraInicioReal,
+### significa que hay datos inconsistentes y debes corregirlo primero
+
+POST http://localhost:8080/api/tramos/5/iniciar
+Content-Type: application/json
+
+{}
+
+### ============================================
+### PASO 2: Finalizar el tramo (SIN PARÁMETROS)
+### ============================================
+### El endpoint ya NO requiere ningún parámetro en el body
+### Solo necesita el ID del tramo en la URL
+### La fecha de fin se registra automáticamente con LocalDateTime.now()
+
+# GET http://localhost:8080/api/solicitudes
+
+POST http://localhost:8080/api/tramos/5/finalizar
+Content-Type: application/json
+
+### RESPUESTA ESPERADA:
+### {
+###   "id": 1,
+###   "origen": "Buenos Aires, Argentina",
+###   "destino": "Córdoba, Argentina",
+###   "distanciaKm": 704.5,
+###   "distanciaKmReal": 712.3,
+###   "costo": 35000.0,
+###   "costoReal": 42500.75,
+###   "camionId": 3,
+###   "transportistaId": 2,
+###   "depositoOrigenId": null,
+###   "depositoDestinoId": 1,
+###   "fechaInicio": "2025-11-16T10:00:00",
+###   "fechaFinEstimada": "2025-11-16T20:00:00",
+###   "fechaHoraInicioReal": "2025-11-16T10:30:00",
+###   "fechaHoraFinReal": "2025-11-16T21:15:43.123456",  // <- Hora actual del sistema
+###   "duracionMinReal": 645,                             // <- Calculado automáticamente
+###   "diasEstadia": 0,
+###   "costoEstadia": 0.0,
+###   "estado": "FINALIZADO",
+###   "tipo": "ORIGEN_DEPOSITO",
+###   "orden": 1
+### }
+
+### ============================================
+### EJEMPLO: Finalizar tramo con estadía
+### ============================================
+### Si el tramo viene de un depósito (tiene depositoOrigenId),
+### se calcula automáticamente:
+### - Horas transcurridas entre fin del tramo anterior y inicio del tramo actual
+### - Días de estadía (redondeado hacia arriba)
+### - Costo de estadía (días × costoEstadiaDiaria del depósito)
+
+POST http://localhost:8080/api/tramos/3/finalizar
+Content-Type: application/json
+
+### RESPUESTA CON ESTADÍA:
+### {
+###   "id": 3,
+###   "origen": "Depósito Córdoba",
+###   "destino": "Rosario, Argentina",
+###   "distanciaKmReal": 320.5,
+###   "costoReal": 25000.50,  // <- Incluye transporte + estadía
+###   "diasEstadia": 2,        // <- 2 días en el depósito
+###   "costoEstadia": 10000.0, // <- 2 días × $5000/día
+###   "fechaHoraFinReal": "2025-11-16T21:30:00.456789",
+###   "estado": "FINALIZADO",
+###   ...
+### }
+
+### ============================================
+### EJEMPLO: Finalizar último tramo de la ruta
+### ============================================
+### Cuando se finaliza el último tramo, se completa automáticamente la solicitud:
+### - Estado cambia a COMPLETADA
+### - tiempoRealMin = diferencia entre fechaSolicitud y fechaHoraFinReal del último tramo
+### - costoReal = sumatoria de todos los costos reales (incluye transportes + estadías)
+
+POST http://localhost:8080/api/tramos/5/finalizar
+Content-Type: application/json
+
+### LOGS ESPERADOS EN CONSOLA:
+### ⏱️ Duración real calculada: 645 minutos
+### 📏 Distancia real calculada: 712.3 km
+### 💰 Desglose costo transporte:
+###    - Combustible: $32450.50
+###    - Distancia: $7125.00
+###    - Cargo fijo: $2500.00
+###    - TOTAL: $42075.50
+### ℹ️ El tramo no viene de un depósito, no hay estadía
+### ✅ Camión 3 liberado
+### ✅ Todos los tramos finalizados. Completando solicitud...
+### ⏱️ Tiempo real total: 2880 minutos
+### 💰 Costo final total: $125000.75
+###    (incluye transporte + estadías)
+### ✅ Solicitud 1 marcada como COMPLETADA
+### ✅ Tramo 5 finalizado exitosamente
+
+### ============================================
+### ERRORES COMUNES
+### ============================================
+
+### Error: Tramo no está en estado INICIADO
+POST http://localhost:8080/api/tramos/10/finalizar
+Content-Type: application/json
+
+### RESPUESTA:
+### HTTP/1.1 400 Bad Request
+### {
+###   "mensaje": "El tramo debe estar en estado INICIADO para finalizarse. Estado actual: ASIGNADO"
+### }
+
+### Error: Tramo no encontrado
+POST http://localhost:8080/api/tramos/999/finalizar
+Content-Type: application/json
+
+### RESPUESTA:
+### HTTP/1.1 404 Not Found
+### {
+###   "mensaje": "Tramo no encontrado con ID: 999"
+### }

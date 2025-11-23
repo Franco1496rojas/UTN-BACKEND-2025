@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tpi_db?serverTimezone=UTC
+    username: postgres
+    password: pgadmin123
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-init-sql: SET TIME ZONE 'UTC'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          time_zone: UTC
+    show-sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: INFO
+
+# URLs de otros microservicios para desarrollo local
+clientes:
+  service:
+    url: http://localhost:8081/api
+
+geoapi:
+  service:
+    url: http://localhost:8084/api/distancia
+  connect:
+    timeout: 3000
+  read:
+    timeout: 5000
+
+flota:
+  base:
+    url: http://localhost:8082
+  camiones:
+    path: /api/camiones
+  tarifas:
+    path: /api/tarifas
+  parametros:
+    path: /api/parametros-tarifa
+  depositos:
+    path: /api/depositos

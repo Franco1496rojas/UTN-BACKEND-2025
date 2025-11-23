@@ -1,0 +1,156 @@
+services:
+  # 🟣 KEYCLOAK - Autenticación y autorización
+  keycloak:
+    image: quay.io/keycloak/keycloak:24.0.3
+    container_name: keycloak
+    command: start-dev --import-realm
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin123
+      - KC_HOSTNAME_STRICT=false
+      - KC_HOSTNAME_STRICT_BACKCHANNEL=false
+      - KC_HTTP_ENABLED=true
+    ports:
+      - "8085:8080"
+    networks:
+      - backend-net
+    volumes:
+      - keycloak_data:/opt/keycloak/data
+      - ./keycloak/realm-export:/opt/keycloak/data/import
+
+  # 🟡 POSTGRESQL - Base de datos central
+  postgres:
+    image: postgres:17
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pgadmin123
+      - POSTGRES_DB=tpi_db
+      - TZ=America/Argentina/Cordoba
+      - POSTGRES_INITDB_ARGS=--encoding=UTF8
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-compose/pgdata:/var/lib/postgresql/data
+      - ./postgres-compose/initdb:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d tpi_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - backend-net
+
+  # 🟢 MS-CLIENTES
+  ms-clientes:
+    build:
+      context: .
+      dockerfile: ms-clientes/Dockerfile
+    container_name: ms-clientes
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/tpi_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=pgadmin123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=none
+      - SERVER_PORT=8081
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI=http://keycloak:8080/realms/tpi
+    networks:
+      - backend-net
+
+  # 🔵 MS-FLOTA
+  ms-flota:
+    build:
+      context: .
+      dockerfile: ms-flota/Dockerfile
+    container_name: ms-flota
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/tpi_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=pgadmin123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SERVER_PORT=8082
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI=http://keycloak:8080/realms/tpi
+    networks:
+      - backend-net
+
+  # 🔴 MS-OPERACIONES
+  ms-operaciones:
+    build:
+      context: .
+      dockerfile: ms-operaciones/Dockerfile
+    container_name: ms-operaciones
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ms-flota:
+        condition: service_started
+      ms-clientes:
+        condition: service_started
+      ms-geoapi:
+        condition: service_started
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/tpi_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=pgadmin123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI=http://keycloak:8080/realms/tpi
+      - GEOAPI_SERVICE_URL=http://ms-geoapi:8084/api/distancia
+      - FLOTA_BASE_URL=http://ms-flota:8082
+      - FLOTA_CAMIONES_PATH=/api/camiones
+      - FLOTA_TARIFAS_PATH=/api/tarifas
+      - FLOTA_PARAMETROS_PATH=/api/parametros
+      - FLOTA_PARAMETROS_PATH=/api/parametros-tarifa
+      - FLOTA_DEPOSITOS_PATH=/api/depositos
+      - CLIENTES_SERVICE_URL=http://ms-clientes:8081/api
+    networks:
+      - backend-net
+
+  # 🟠 MS-GEOAPI (Google Distance Matrix)
+  ms-geoapi:
+    build:
+      context: .
+      dockerfile: ms-geoapi/Dockerfile
+    container_name: ms-geoapi
+    environment:
+      - GOOGLE_MAPS_APIKEY=AIzaSyAUp0j1WFgacoQYTKhtPI-CF6Ld7a7jHSg
+      - SERVER_PORT=8084
+    ports:
+      - "8084:8084"
+    networks:
+      - backend-net
+
+  # ⚫ API GATEWAY (Punto único de entrada)
+  api-gateway:
+    build:
+      context: .
+      dockerfile: api-gateway/Dockerfile
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - keycloak
+      - ms-clientes
+      - ms-flota
+      - ms-operaciones
+      - ms-geoapi
+    environment:
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI=http://keycloak:8080/realms/tpi
+    networks:
+      - backend-net
+
+networks:
+  backend-net:
+    driver: bridge
+
+volumes:
+  keycloak_data:

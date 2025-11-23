@@ -1,0 +1,681 @@
+################################################################################
+# 🚚 SISTEMA DE GESTIÓN DE TRANSPORTE DE CONTENEDORES
+################################################################################
+# ✅ CONFIGURACIÓN CORRECTA:
+# - Keycloak: localhost:8085 (externo) / keycloak:8080 (interno)
+# - API Gateway: Acepta tokens de ambos issuers
+# - Roles configurados: ADMIN, TRANSPORTISTA, CLIENTE
+# - SecurityConfig extrae roles del claim "roles"
+################################################################################
+# INSTRUCCIONES:
+# 1. Ejecutar uno de los 3 LOGINs según el rol que quieras probar
+# 2. Copiar el "access_token" completo de la respuesta JSON
+# 3. Reemplazar TOKEN_AQUI con tu token en los endpoints
+# 4. Los endpoints están organizados por microservicio y rol requerido
+################################################################################
+
+@gateway = http://localhost:8080
+
+################################################################################
+# 🔐 AUTENTICACIÓN - KEYCLOAK
+################################################################################
+
+### LOGIN ADMIN (Copiar access_token y usar en endpoints ADMIN)
+POST http://localhost:8085/realms/tpi/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=api-gateway&client_secret=gateway-secret-change&username=admin-napo&password=admin123
+
+### LOGIN TRANSPORTISTA (Copiar access_token y usar en endpoints TRANSPORTISTA)
+POST http://localhost:8085/realms/tpi/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=api-gateway&client_secret=gateway-secret-change&username=transp-cabe&password=transp123
+
+### LOGIN CLIENTE (Copiar access_token y usar en endpoints CLIENTE)
+POST http://localhost:8085/realms/tpi/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=api-gateway&client_secret=gateway-secret-change&username=franco&password=cliente123
+
+################################################################################
+# 👥 MS-CLIENTES - GESTIÓN DE CLIENTES (ROL: CLIENTE + ADMIN)
+################################################################################
+
+### Listar todos los clientes
+GET {{gateway}}/api/depositos
+Authorization: Bearer TOKEN_AQUI
+
+### Buscar cliente por apellido
+GET {{gateway}}/api/clientes?apellido=Gómez
+Authorization: Bearer TOKEN_AQUI
+
+### Obtener cliente por ID
+GET {{gateway}}/api/clientes/1
+Authorization: Bearer TOKEN_AQUI
+
+### Crear nuevo cliente
+POST {{gateway}}/api/clientes
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "dni": 45678901,
+  "nombre": "Laura",
+  "apellido": "Martinez",
+  "email": "laura.martinez@example.com",
+  "telefono": "3512345678",
+  "domicilio": "Av. Colón 456",
+  "keycloakId": "laura-1",
+  "ciudad": { "id": 1 }
+}
+
+### Actualizar cliente
+PUT {{gateway}}/api/clientes/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "dni": 12345678,
+  "nombre": "Juan Actualizado",
+  "apellido": "Pérez",
+  "email": "juan.perez.new@example.com",
+  "telefono": "3517654321",
+  "domicilio": "Calle Nueva 123",
+  "keycloakId": "juan-1",
+  "ciudad": { "id": 1 }
+}
+
+### Eliminar cliente
+DELETE {{gateway}}/api/clientes/5
+Authorization: Bearer TOKEN_AQUI
+
+################################################################################
+# 📦 MS-CLIENTES - GESTIÓN DE CONTENEDORES (ROL: CLIENTE + ADMIN)
+################################################################################
+
+### Listar todos los contenedores
+GET {{gateway}}/api/contenedores
+Authorization: Bearer TOKEN_AQUI
+
+### Filtrar contenedores por cliente
+GET {{gateway}}/api/contenedores?clienteId=1
+Authorization: Bearer TOKEN_AQUI
+
+### Obtener contenedor por ID
+GET {{gateway}}/api/contenedores/1
+Authorization: Bearer TOKEN_AQUI
+
+### Crear nuevo contenedor
+POST {{gateway}}/api/contenedores
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "codigo": "CONT-NEW-001",
+  "peso": 3500.0,
+  "volumen": 4.5,
+  "cliente": { "id": 1 }
+}
+
+### Actualizar contenedor
+PUT {{gateway}}/api/contenedores/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "codigo": "CONT-001-MOD",
+  "peso": 4000.0,
+  "volumen": 5.0,
+  "cliente": { "id": 1 }
+}
+
+### Eliminar contenedor
+DELETE {{gateway}}/api/contenedores/7
+Authorization: Bearer TOKEN_AQUI
+
+################################################################################
+# 🌎 MS-CLIENTES - PROVINCIAS Y CIUDADES (ROL: TODOS)
+################################################################################
+
+### Listar todas las provincias
+GET {{gateway}}/api/provincias
+Authorization: Bearer TOKEN_AQUI
+
+### Obtener provincia por ID
+GET {{gateway}}/api/provincias/1
+Authorization: Bearer TOKEN_AQUI
+
+### Crear provincia (ADMIN)
+POST {{gateway}}/api/provincias
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Salta"
+}
+
+### Actualizar provincia (ADMIN)
+PUT {{gateway}}/api/provincias/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Córdoba Capital"
+}
+
+### Eliminar provincia (ADMIN)
+DELETE {{gateway}}/api/provincias/6
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Listar todas las ciudades
+GET {{gateway}}/api/ciudades
+Authorization: Bearer TOKEN_AQUI
+
+### Filtrar ciudades por provincia
+GET {{gateway}}/api/ciudades?provinciaId=1
+Authorization: Bearer TOKEN_AQUI
+
+### Obtener ciudad por ID
+GET {{gateway}}/api/ciudades/1
+Authorization: Bearer TOKEN_AQUI
+
+### Crear ciudad (ADMIN)
+POST {{gateway}}/api/ciudades
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Villa Carlos Paz",
+  "codigoPostal": "5152",
+  "provincia": { "id": 1 }
+}
+
+### Actualizar ciudad (ADMIN)
+PUT {{gateway}}/api/ciudades/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Córdoba Capital",
+  "codigoPostal": "5000",
+  "provincia": { "id": 1 }
+}
+
+### Eliminar ciudad (ADMIN)
+DELETE {{gateway}}/api/ciudades/10
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+################################################################################
+# 🚛 MS-FLOTA - GESTIÓN DE CAMIONES (ROL: ADMIN)
+################################################################################
+
+### Listar todos los camiones (ADMIN)
+GET {{gateway}}/api/camiones
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Filtrar camiones por transportista (ADMIN)
+GET {{gateway}}/api/camiones?transportistaId=1
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Listar camiones disponibles (ADMIN)
+GET {{gateway}}/api/camiones/disponibles
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Listar camiones disponibles con filtros de capacidad (ADMIN)
+GET {{gateway}}/api/camiones/disponibles?pesoMaximo=5000&volumenMaximo=10
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Cantidad de camiones libres (ADMIN)
+GET {{gateway}}/api/camiones/libres
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Cantidad de camiones ocupados (ADMIN)
+GET {{gateway}}/api/camiones/ocupados
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Obtener camión por ID (ADMIN)
+GET {{gateway}}/api/camiones/1
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Crear nuevo camión (ADMIN)
+POST {{gateway}}/api/camiones
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "dominio": "NEW123",
+  "capacidadPeso": 8000.0,
+  "capacidadVolumen": 30.0,
+  "costoKmBase": 1500.0,
+  "consumoLitroKm": 0.4,
+  "disponibilidad": true,
+  "transportista": { "id": 1 }
+}
+
+### Actualizar camión (ADMIN)
+PUT {{gateway}}/api/camiones/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "dominio": "ABC123",
+  "capacidadPeso": 9000.0,
+  "capacidadVolumen": 35.0,
+  "costoKmBase": 1600.0,
+  "consumoLitroKm": 0.45,
+  "disponibilidad": true,
+  "transportista": { "id": 1 }
+}
+
+### Cambiar disponibilidad de camión (ADMIN)
+PUT {{gateway}}/api/camiones/disponibilidad?camionId=1&disponible=false
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Eliminar camión (ADMIN)
+DELETE {{gateway}}/api/camiones/5
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+################################################################################
+# 🏢 MS-FLOTA - GESTIÓN DE DEPÓSITOS (ROL: ADMIN)
+################################################################################
+
+### Listar todos los depósitos (ADMIN)
+GET {{gateway}}/api/depositos
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Obtener depósito por ID (ADMIN)
+GET {{gateway}}/api/depositos/1
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Ver contenedores pendientes en depósito (ADMIN)
+GET {{gateway}}/api/depositos/1/contenedores-pendientes
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Crear nuevo depósito (ADMIN)
+POST {{gateway}}/api/depositos
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Depósito Norte",
+  "direccion": "Av. Circunvalación 1000",
+  "latitud": -31.3500,
+  "longitud": -64.2000,
+  "costoEstadiaDiaria": 800.0,
+  "capacidadMaxima": 40,
+  "estado": true
+}
+
+### Actualizar depósito (ADMIN)
+PUT {{gateway}}/api/depositos/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Depósito Central Actualizado",
+  "direccion": "Nueva Dirección 555",
+  "latitud": -31.4000,
+  "longitud": -64.2500,
+  "costoEstadiaDiaria": 1000.0,
+  "capacidadMaxima": 50,
+  "cantidadOcupada": 10,
+  "estado": true
+}
+
+### Incrementar ocupación de depósito (ADMIN)
+PATCH {{gateway}}/api/depositos/1/incrementar-ocupacion?cantidad=5
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Decrementar ocupación de depósito (ADMIN)
+PATCH {{gateway}}/api/depositos/1/decrementar-ocupacion?cantidad=3
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Eliminar depósito (ADMIN)
+DELETE {{gateway}}/api/depositos/5
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+################################################################################
+# 💰 MS-FLOTA - TARIFAS Y PARÁMETROS (ROL: ADMIN)
+################################################################################
+
+### Listar todas las tarifas (ADMIN)
+GET {{gateway}}/api/tarifas
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Obtener tarifa por ID (ADMIN)
+GET {{gateway}}/api/tarifas/1
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Crear nueva tarifa (ADMIN)
+POST {{gateway}}/api/tarifas
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "volumenMin": 0.0,
+  "volumenMax": 10.0,
+  "pesoMin": 0.0,
+  "pesoMax": 2000.0,
+  "costoKmBase": 90.0
+}
+
+### Actualizar tarifa (ADMIN)
+PUT {{gateway}}/api/tarifas/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "volumenMin": 0.0,
+  "volumenMax": 12.0,
+  "pesoMin": 0.0,
+  "pesoMax": 2500.0,
+  "costoKmBase": 95.0
+}
+
+### Eliminar tarifa (ADMIN)
+DELETE {{gateway}}/api/tarifas/5
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Listar parámetros de tarifa (ADMIN)
+GET {{gateway}}/api/parametros-tarifa
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Actualizar parámetros de tarifa (ADMIN)
+PUT {{gateway}}/api/parametros-tarifa/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "precioLitroCombustible": 1400.0,
+  "cargoFijoTramo": 3000.0
+}
+
+### Crear parámetros de tarifa (ADMIN)
+POST {{gateway}}/api/parametros-tarifa
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "precioLitroCombustible": 1300.0,
+  "cargoFijoTramo": 2500.0
+}
+
+################################################################################
+# 🚚 MS-FLOTA - TRANSPORTISTAS (ROL: ADMIN)
+################################################################################
+
+### Listar todos los transportistas (ADMIN)
+GET {{gateway}}/api/transportistas
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Obtener transportista por ID (ADMIN)
+GET {{gateway}}/api/transportistas/1
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Crear transportista (ADMIN)
+POST {{gateway}}/api/transportistas
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Transportes del Norte",
+  "cuit": "20-30405060-7",
+  "email": "contacto@transportesnorte.com",
+  "telefono": "3815555555"
+}
+
+### Actualizar transportista (ADMIN)
+PUT {{gateway}}/api/transportistas/1
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "nombre": "Transportes Sur Actualizado",
+  "cuit": "20-12345678-9",
+  "email": "nuevo@transportessur.com",
+  "telefono": "3511234567"
+}
+
+### Eliminar transportista (ADMIN)
+DELETE {{gateway}}/api/transportistas/5
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+################################################################################
+# 📋 MS-OPERACIONES - SOLICITUDES (ROL: CLIENTE + ADMIN)
+################################################################################
+
+### Listar todas las solicitudes
+GET {{gateway}}/api/solicitudes
+Authorization: Bearer TOKEN_AQUI
+
+### Filtrar solicitudes por cliente
+GET {{gateway}}/api/solicitudes?clienteId=1
+Authorization: Bearer TOKEN_AQUI
+
+### Filtrar solicitudes por estado
+GET {{gateway}}/api/solicitudes?estado=PENDIENTE
+Authorization: Bearer TOKEN_AQUI
+
+### Obtener solicitud por ID
+GET {{gateway}}/api/solicitudes/1
+Authorization: Bearer TOKEN_AQUI
+
+### Crear solicitud simple
+POST {{gateway}}/api/solicitudes
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "clienteId": 1,
+  "contenedorId": 1,
+  "origen": "Córdoba",
+  "destino": "Buenos Aires"
+}
+
+### Registrar solicitud completa (con cliente y contenedor nuevo)
+POST {{gateway}}/api/solicitudes/registrar
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "clienteDni": "98765432",
+  "clienteNombre": "María López",
+  "clienteEmail": "maria.lopez@example.com",
+  "clienteTelefono": "3515678901",
+  "contenedorPeso": 2800.0,
+  "contenedorVolumen": 3.8,
+  "contenedorCodigo": "CONT-TEST-999",
+  "origen": "Rosario",
+  "destino": "Mendoza",
+  "observaciones": "Urgente"
+}
+
+### Cambiar estado de solicitud
+PUT {{gateway}}/api/solicitudes/1/estado?nuevoEstado=CANCELADA&observaciones=Cliente canceló
+Authorization: Bearer TOKEN_AQUI
+
+### Asignar ruta directa a solicitud (BORRADOR → PROGRAMADA)
+POST {{gateway}}/api/solicitudes/1/asignar-ruta
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "tipo": "directa"
+}
+
+### Asignar ruta indirecta con depósito (BORRADOR → PROGRAMADA)
+POST {{gateway}}/api/solicitudes/2/asignar-ruta
+Content-Type: application/json
+Authorization: Bearer TOKEN_AQUI
+
+{
+  "tipo": "indirecta"
+}
+
+### Eliminar solicitud
+DELETE {{gateway}}/api/solicitudes/5
+Authorization: Bearer TOKEN_AQUI
+
+################################################################################
+# 🛣️ MS-OPERACIONES - TRAMOS (ROL: ADMIN + TRANSPORTISTA)
+################################################################################
+
+### Listar todos los tramos (ADMIN)
+GET {{gateway}}/api/tramos
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Filtrar tramos por ruta (ADMIN)
+GET {{gateway}}/api/tramos?rutaId=1
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### Crear tramo (ADMIN - normalmente se crean automáticamente)
+POST {{gateway}}/api/tramos
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "origen": "Córdoba",
+  "destino": "Buenos Aires",
+  "distanciaKm": 700.0,
+  "costoEstimado": 70000.0,
+  "duracionMinutos": 600,
+  "orden": 1,
+  "estado": "ESTIMADO",
+  "tipo": "ORIGEN_DESTINO",
+  "ruta": { "id": 1 }
+}
+
+### Asignar camión a tramo (PROGRAMADA → ASIGNADA) (ADMIN)
+POST {{gateway}}/api/tramos/1/asignar-camion
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "camionId": 1
+}
+
+### Iniciar tramo (ASIGNADA → EN_TRANSITO) (TRANSPORTISTA)
+POST {{gateway}}/api/tramos/1/iniciar
+Content-Type: application/json
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+### Finalizar tramo (EN_TRANSITO → COMPLETADA) (TRANSPORTISTA)
+POST {{gateway}}/api/tramos/1/finalizar
+Content-Type: application/json
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+{
+  "fechaHoraFinReal": "2025-11-16T18:00:00",
+  "distanciaKmReal": 710.5,
+  "duracionMinReal": 620,
+  "costoReal": 0
+}
+
+################################################################################
+# 🚚 MS-OPERACIONES - TRAMOS DEL TRANSPORTISTA (ROL: TRANSPORTISTA)
+################################################################################
+
+### Ver todos los tramos del transportista
+GET {{gateway}}/api/transportistas/1/tramos
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+### Ver tramos asignados pero no iniciados
+GET {{gateway}}/api/transportistas/1/tramos?estado=ASIGNADO
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+### Ver tramos en curso
+GET {{gateway}}/api/transportistas/1/tramos?estado=INICIADO
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+### Ver historial de tramos finalizados
+GET {{gateway}}/api/transportistas/1/tramos?estado=FINALIZADO
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+################################################################################
+# 📍 MS-OPERACIONES - SEGUIMIENTO (ROL: CLIENTE + ADMIN)
+################################################################################
+
+### Consultar seguimiento por solicitud
+GET {{gateway}}/api/seguimientos/solicitud/1
+Authorization: Bearer TOKEN_AQUI
+
+################################################################################
+# 🔄 FLUJO COMPLETO DE EJEMPLO
+################################################################################
+
+### PASO 1: Login como CLIENTE
+# Ejecutar el login de CLIENTE arriba y copiar el token
+
+### PASO 2: Registrar solicitud completa
+POST {{gateway}}/api/solicitudes/registrar
+Content-Type: application/json
+Authorization: Bearer TOKEN_CLIENTE_AQUI
+
+{
+  "clienteDni": "11223344",
+  "clienteNombre": "Test Usuario",
+  "clienteEmail": "test@example.com",
+  "clienteTelefono": "3511111111",
+  "contenedorPeso": 3000.0,
+  "contenedorVolumen": 4.0,
+  "contenedorCodigo": "CONT-FLOW-001",
+  "origen": "Córdoba",
+  "destino": "Buenos Aires",
+  "observaciones": "Flujo de prueba completo"
+}
+
+### PASO 3: Asignar ruta directa (usar ID de la solicitud creada)
+POST {{gateway}}/api/solicitudes/1/asignar-ruta
+Content-Type: application/json
+Authorization: Bearer TOKEN_CLIENTE_AQUI
+
+{
+  "tipo": "directa"
+}
+
+### PASO 4: Login como ADMIN y ver camiones disponibles
+GET {{gateway}}/api/camiones/disponibles?pesoMaximo=3000&volumenMaximo=4
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+### PASO 5: Asignar camión al tramo (usar ID del tramo creado)
+POST {{gateway}}/api/tramos/1/asignar-camion
+Content-Type: application/json
+Authorization: Bearer TOKEN_ADMIN_AQUI
+
+{
+  "camionId": 1
+}
+
+### PASO 6: Login como TRANSPORTISTA e iniciar tramo
+POST {{gateway}}/api/tramos/1/iniciar
+Content-Type: application/json
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+### PASO 7: Ver tramos en curso del transportista
+GET {{gateway}}/api/transportistas/1/tramos?estado=INICIADO
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+### PASO 8: Finalizar tramo
+POST {{gateway}}/api/tramos/1/finalizar
+Content-Type: application/json
+Authorization: Bearer TOKEN_TRANSP_AQUI
+
+{
+  "fechaHoraFinReal": "2025-11-16T20:00:00",
+  "distanciaKmReal": 705.0,
+  "duracionMinReal": 600,
+  "costoReal": 0
+}
+
+### PASO 9: Consultar seguimiento como CLIENTE
+GET {{gateway}}/api/seguimientos/solicitud/1
+Authorization: Bearer TOKEN_CLIENTE_AQUI
+
+### PASO 10: Ver solicitud completada
+GET {{gateway}}/api/solicitudes/1
+Authorization: Bearer TOKEN_CLIENTE_AQUI
+
+################################################################################
+# FIN DE LOS TESTS
+################################################################################

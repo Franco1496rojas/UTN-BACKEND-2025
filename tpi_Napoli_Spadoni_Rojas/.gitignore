@@ -1,0 +1,158 @@
+# =========================
+# 📦 Build & Dependencias
+# =========================
+pgdata/
+target/
+build/
+out/
+dependency-reduced-pom.xml
+*.log
+*.tmp
+*.bak
+*.swp
+*.pid
+*.seed
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+!/.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# Gradle (por si alguien abre en otro entorno)
+.gradle/
+build.gradle
+settings.gradle
+
+# =========================
+# ⚙️ Configuración IDE
+# =========================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# =========================
+# 🧪 Testing
+# =========================
+# JUnit / Surefire
+*.test
+.surefire-*
+.failures
+
+# Jacoco / Coverage
+jacoco.exec
+*.lcov
+coverage/
+site/
+*.html
+
+# =========================
+# 💾 SO / Archivos temporales
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.lnk
+*.orig
+*.rej
+*.swo
+*.swp
+
+# =========================
+# 🧰 Entorno y herramientas
+# =========================
+# Logs / cache
+logs/
+*.log
+*.out
+*.err
+
+# Spring Boot
+!src/**/application.yml
+!src/**/application.properties
+# pero ignorar overrides locales:
+application-local.yml
+application-local.properties
+.env
+*.env
+
+# Docker / Compose
+docker-compose.override.yml
+.docker/
+*.tar
+*.gz
+*.zip
+
+# Node (por si algún front está dentro del repo)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# =========================
+# 🧪 Archivos de empaquetado o despliegue
+# =========================
+*.jar
+*.war
+*.ear
+*.class
+*.exec
+*.hprof
+*.original
+
+# =========================
+# 🧩 Sistema operativo
+# =========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# =========================
+# 🧠 Personal / auxiliares
+# =========================
+# Notebooks / documentos
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.md.bak
+notes/
+docs/private/
+
+# Backups generados
+*.bak
+*.backup
+*.old

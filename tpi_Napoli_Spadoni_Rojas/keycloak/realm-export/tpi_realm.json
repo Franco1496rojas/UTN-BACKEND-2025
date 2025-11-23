@@ -1,0 +1,122 @@
+{
+  "realm": "tpi",
+  "enabled": true,
+  "displayName": "TPI",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+
+  "roles": {
+    "realm": [
+      { "name": "ADMIN", "description": "Administrador del sistema" },
+      { "name": "TRANSPORTISTA", "description": "Transportista" },
+      { "name": "CLIENTE", "description": "Cliente" }
+    ]
+  },
+
+  "clients": [
+    {
+      "clientId": "api-gateway",
+      "name": "API Gateway",
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "serviceAccountsEnabled": true,
+      "secret": "gateway-secret-change",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "redirectUris": ["http://localhost:8080/*"],
+      "webOrigins": ["*"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      },
+      "protocolMappers": [
+        {
+          "name": "realm roles",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-realm-role-mapper",
+          "consentRequired": false,
+          "config": {
+            "multivalued": "true",
+            "user.attribute": "roles",
+            "access.token.claim": "true",
+            "id.token.claim": "true",
+            "claim.name": "roles",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "name": "clienteId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "clienteId",
+            "claim.name": "clienteId",
+            "jsonType.label": "String",
+            "id.token.claim": "true",
+            "access.token.claim": "true"
+          }
+        },
+        {
+          "name": "transportistaId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "transportistaId",
+            "claim.name": "transportistaId",
+            "jsonType.label": "String",
+            "id.token.claim": "true",
+            "access.token.claim": "true"
+          }
+        },
+        {
+          "name": "adminId",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "config": {
+            "user.attribute": "adminId",
+            "claim.name": "adminId",
+            "jsonType.label": "String",
+            "id.token.claim": "true",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ],
+
+  "users": [
+    {
+      "username": "admin-napo",
+      "enabled": true,
+      "firstName": "Admin",
+      "lastName": "Napoli",
+      "email": "napo@admin.com",
+      "emailVerified": true,
+      "attributes": { "adminId": ["1"] },
+      "credentials": [{ "type": "password", "value": "admin123", "temporary": false }],
+      "realmRoles": ["ADMIN"]
+    },
+    {
+      "username": "transp-cabe",
+      "enabled": true,
+      "firstName": "Transportista",
+      "lastName": "Cabe",
+      "email": "cabe@flota.com",
+      "emailVerified": true,
+      "attributes": { "transportistaId": ["1"] },
+      "credentials": [{ "type": "password", "value": "transp123", "temporary": false }],
+      "realmRoles": ["TRANSPORTISTA"]
+    },
+    {
+      "username": "franco",
+      "enabled": true,
+      "firstName": "Franco",
+      "lastName": "Cliente",
+      "email": "franco@cliente.com",
+      "emailVerified": true,
+      "attributes": { "clienteId": ["1"] },
+      "credentials": [{ "type": "password", "value": "cliente123", "temporary": false }],
+      "realmRoles": ["CLIENTE"]
+    }
+  ]
+}
